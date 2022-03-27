@@ -19,6 +19,7 @@
 之后在`dist`下的`common.css`文件会自动根据`style.css`文件的改动而更新，你可以使用`Wikitext`3.4版本插件上传，这个`style.css`已经附带了页面信息标签头。
 
 ## 扩展
-
-
 [了解TailwindCSS](https://Tailwindcss.com) ｜ [了解Wikitext插件的使用方法](https://www.huijiwiki.com/p/21136) ｜ [Wikitext插件](https://marketplace.visualstudio.com/items?itemName=RoweWilsonFrederiskHolme.wikitext)
+
+## 注意事项
+在不确认后果、不明确自身目的的情况下，不要随便删除和改动已经写入的内容。当然如果问题发生了，撤，都可以撤。
