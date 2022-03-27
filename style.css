@@ -1,3 +1,14 @@
+/* <%-- [PAGE_INFO]
+Comment=#Please do not remove this struct. It's record contains some important informations of edit. This struct will be removed automatically after you push edits.#
+PageTitle=#MediaWiki:Common.css#
+PageID=#608#
+RevisionID=#22972#
+ContentModel=#css#
+ContentFormat=#text/css#
+[END_PAGE_INFO] --%> */
+
+
+
 /* @tailwind base; */
 @tailwind components;
 @tailwind utilities;

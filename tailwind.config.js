@@ -1,0 +1,47 @@
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {
+      backgroundImage: theme => ({
+        'diagonal': "url('data:image/svg+xml;%20charset=utf8,%3Csvg%20preserveAspectRatio=%22none%20meet%22%20width=%22100%25%22%20height=%22100%25%22%20viewBox=%220%200%201%201%22%20version=%221.1%22%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20xml:space=%22preserve%22%20xmlns:serif=%22http://www.serif.com/%22%20style=%22fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;%22%3E%0A%20%20%20%20%3Cg%20transform=%22matrix(0.00166667,0,0,0.00166667,0,0)%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d=%22M600,600L0,0L0,600L600,600Z%22%20style=%22fill:rgb(38,40,45);%22/%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E%0A')",
+    })
+    },
+    colors: {
+      y1s1color:"#367799",
+      y1s2color:"#BB9331",
+      y1s3color:"#5A8846",
+      y1s4color:"#8C3141",
+      y2s1color:"#67348B",
+      y2s2color:"#2C67C5",
+      y2s3color:"#B5422A",
+      y2s4color:"#2D6346",
+      y3s1color:"#F4C146",
+      y3s2color:"#6F7333",
+      y3s3color:"#75818F",
+      y3s4color:"#A48459",
+      y4s1color:"#D12E4B",
+      y4s2color:"#354392",
+      y4s3color:"#53AB31",
+      y4s4color:"#4B9CB0",
+      y5s1color:"#85628F",
+      y5s2color:"#467E98",
+      y5s3color:"#7DA235",
+      y5s4color:"#BF4B23",
+      y6s1color:"#9B1E14",
+      t_bgcolor: "#1E1F23",
+      cellbg: "#0E0F11",
+      cellline:"#1D1F23",
+      gtext:"#adb1ba",
+      tablecolor:"#26282D",
+      white:"#fff",
+      bordercolor:"#0D0F11",
+      bgcolor:"#1C1D20",
+      chart_dashed:"#67696e",
+      richtabckd:"#262626",
+      richtabnck:"#383838",
+      primary:"#ffc800",
+      deepgray:"#1f2937",
+    },
+  },
+  plugins: []
+}
