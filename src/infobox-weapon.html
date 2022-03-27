@@ -1,0 +1,680 @@
+<!doctype html>
+<html class="text-gtext" style="font-size: 10px;" >
+<head>
+<!-- ... -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="/dist/common.css" rel="stylesheet">
+</head>
+<body style="background-color: #2e3134;">
+
+    <!-- 外框 -->
+        <div class="text-2xl infobox-gun">
+
+            <!-- 主武器 -->
+            <div class="titlebox">
+                <div class="title" id="基本参数">
+                    <span>
+                        <div class="triangle-t"></div><div class="triangle-b"></div>
+                    </span>
+                    <span>
+                        主武器
+                    </span>
+                </div>
+                <div class="support">
+                    <span>☑️全自动</span>
+                    <span>☑️半自动</span>
+                    <span>☑️三连发</span>
+                </div>
+            </div>
+            
+            <div class="datatable">
+                <div class="flex flex-col justify-center col-span-3 sm:col-span-1 sm:row-span-4">
+                    <img src="pic/R6S_wpn_L85A2.png" width="330"/>
+                    <span>L85A2突击步枪</span>
+                </div>
+                <div><span>伤害</span><span class="v">47</span></div>
+                <div><span>射速</span><span class="v">750</span></div>
+                <div><span>弹匣</span><span class="v">30<sub>+1</sub>/210</span></div>
+                <div><span>机动</span><span class="v">0</span></div>
+                <div><span>DPS</span><span class="v">525</span></div>
+                <div><span>火力持续</span><span class="v">4.2s</span></div>
+                <div class="col-span-3 widthcell"><span>TTK</span><span class="v w">179ms</span><span class="v w">179ms</span><span class="v w">179ms</span></div>
+                <div class="col-span-3 widthcell"><span>换弹时间</span><span class="v w">1.77s</span><span class="v w">2.63s</span></div>
+                <div class="col-span-3 widthcell sm:col-span-4" id="游戏中介绍"><p>脱欧人最喜欢的武器，可能正是因为脱欧才喜欢上的。估计再过两年仓库里堆积成山的SA80也会一起拿出来。</p></div>
+            </div>
+
+
+            <!-- 独有特性 -->
+            <div class="titlebox">
+                <div class="title" id="独有特性">
+                    <span>
+                        <div class="triangle-t"></div><div class="triangle-b"></div>
+                    </span>
+                    <span>
+                        独有特性
+                    </span>
+                </div>
+            </div>
+
+            <div class="w-full px-2 py-3 text-xl border border-solid sm:p-6 bg-cellbg border-cellline sm:text-2xl">
+                会炸膛。
+            </div>
+
+            <!-- 持有者和配件 -->
+            <div class="titlebox">
+                <div class="title" id="持有者/配件">
+                    <span>
+                        <div class="triangle-t"></div><div class="triangle-b"></div>
+                    </span>
+                    <span>
+                        可选自定义
+                    </span>
+                </div>
+                <div class="support">
+                    <span>☑️挂饰</span>
+                    <span>☑️挂饰</span>
+                    <span>☑️三连发</span>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="w-28">
+                    <table class="w-28 users-config">
+                        <tr>
+                            <th>持有者</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="w-full overflow-x-auto">·
+                    <table class="w-full users-config">
+                        <tr>
+                            <th>红点</th><th>反射</th><th>全息</th><th>1.5x</th><th>2.0x</th><th>2.5x</th><th>3.0x</th><th>特殊</th><th>转角</th><th>垂直</th><th>消焰</th><th>补偿</th><th>消音</th><th>延长</th><th>镭射</th>
+                        </tr>
+
+                        <tr>
+                            <td>2</td><td>1</td><td>2</td><td>1</td><td>2</td><td>1</td><td>2</td><td>1</td><td>2</td><td>1</td><td>2</td><td>1</td><td>2</td><td>1</td><td>支持</td></tr>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+            <div class="w-full text-base text-center sm:hidden text-[#6d7077]"> <<< 可滑动 <<< </div>
+
+            <!-- 后坐力和衰减栏 -->
+            <div class="sm:grid-cols-2 sm:grid ">
+                <!-- 后坐力示意图 -->
+                
+                <div>
+
+                    
+                    <div class="titlebox">
+                        <div class="title" id="独有特性">
+                            <span>
+                                <div class="triangle-t"></div><div class="triangle-b"></div>
+                            </span>
+                            <span>
+                                后坐力
+                            </span>
+                        </div>
+                        <div class="support">
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center justify-center py-6 border border-solid bg-cellbg border-cellline sm:h-96">
+                        <div><table class="text-center">
+                            <tr><th class="w-5"></th><th>标准</th><th>消焰器</th><th>补偿器</th><th>制退器</th></tr>
+                            <tr><th>垂直握把</th><td>图</td><td>图</td><td>图</td><td>图</td></tr>
+                            <tr><th>标准</th><td>图</td><td>图</td><td>图</td><td>图</td></tr>
+                        </table></div>
+                    </div>
+
+                    
+                </div>
+
+                
+                    <!-- 伤害衰减 -->
+                <div>  
+                    
+                    
+                    
+                    <div class="titlebox">
+                        <div class="title" id="伤害衰减">
+                            <span>
+                                <div class="triangle-t"></div><div class="triangle-b"></div>
+                            </span>
+                            <span>
+                                伤害衰减
+                            </span>
+                        </div>
+                        <div class="support">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-flow-col pt-8 pl-4 text-2xl border border-solid border-cellline h-96 bg-cellbg grid-rows-3" >
+                        
+
+
+                        <input type="radio" name="weaponinfo-att-tab" id="standard"  class="hidden" checked>
+                        <input type="radio" name="weaponinfo-att-tab" id="suppressor" class="hidden" >
+                        <input type="radio" name="weaponinfo-att-tab" id="extended" class="hidden" >
+                        
+                        <div class="row-span-3 col-span-1 grid-rows-5 grid mt-2 ml-2" id="weaponib-att-nav">
+                            <label for="standard">
+                                <span class="text-center">标准</span>
+                            </label>
+                            <label for="suppressor">
+                                <span>消音</span>
+                            </label>
+                            <label for="extended">
+                                <span>延长</span>
+                            </label>
+                        </div>
+                        
+                        <div class="col-span-12 pl-2 text-4xl h-80 att-standard hidden" style="grid-template-columns: 25fr 10fr 15fr;grid-template-rows:3fr 7fr 40fr;" >
+                            <div></div>
+                            <div class="text-white flex items-end">47</div>
+                            <div> </div>
+                            <div class="bg-tablecolor chart-cell"> </div>
+                            <div class="chart-diagonal" > 
+                            </div>
+                            <div class="flex items-end text-white">40</div>
+                            <div class="chart-cell gradient"> 起点</div>
+                            <div class="chart-cell gradient"> 25米</div>
+                            <div class="chart-cell gradient">35米</div>
+
+                        </div>
+
+                        <div class="col-span-12 pl-2 text-4xl h-80 att-suppressor hidden" style="grid-template-columns: 25fr 10fr 15fr;grid-template-rows:15fr 7fr 28fr;" >
+                            <div></div>
+                            <div class="text-white flex items-end">35</div>
+                            <div> </div>
+                            <div class="bg-tablecolor chart-cell"> </div>
+                            <div class="chart-diagonal" > </div>
+                            <div class="flex items-end text-white">28</div>
+                            <div class="chart-cell gradient"> 起点</div>
+                            <div class="chart-cell gradient"> 25米</div>
+                            <div class="chart-cell gradient">35米</div>
+
+                        </div>
+
+                        <div class="col-span-12 pl-2 text-4xl h-80 att-extended hidden" style="grid-template-columns: 25fr 10fr 15fr;grid-template-rows:3fr 2fr 45fr;" >
+                            <div></div>
+                            <div class="text-white flex items-end">47</div>
+                            <div> </div>
+                            <div class="bg-tablecolor chart-cell"> </div>
+                            <div class="chart-diagonal" > 
+                            </div>
+                            <div class="flex items-end text-white">45</div>
+                            <div class="chart-cell gradient"> 起点</div>
+                            <div class="chart-cell gradient"> 25米</div>
+                            <div class="chart-cell gradient">35米</div>
+
+                        </div>
+                    
+
+                    </div>
+
+
+
+                    
+                </div>
+                
+            </div>
+            <div class="p-6 text-center">数据比对表｜查看所有的自动步枪｜如何选择配件？</div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        <div class="h-64"></div>
+        
+
+        
+
+
+
+
+
+        
+    <!-- 霰弹 -->        
+
+    <div class="text-2xl infobox-gun">
+
+        <!-- 主武器 -->
+        <div class="titlebox">
+            <div class="title" id="基本参数">
+                <span>
+                    <div class="triangle-t"></div><div class="triangle-b"></div>
+                </span>
+                <span>
+                    主武器
+                </span>
+            </div>
+            <div class="support">
+                <span>☑️全自动</span>
+                <span>☑️半自动</span>
+                <span>☑️三连发</span>
+            </div>
+        </div>
+        
+        <div class="datatable">
+            <div class="flex flex-col justify-center col-span-3 sm:col-span-1 sm:row-span-4">
+                <img src="src/pic/R6S_wpn_L85A2.png" width="330"/>
+                <span>L85A2突击步枪</span>
+            </div>
+            <div><span>伤害</span><span class="v">47</span></div>
+            <div><span>射速</span><span class="v">750</span></div>
+            <div><span>弹匣</span><span class="v">30<sub>+1</sub>/210</span></div>
+            <div><span>机动</span><span class="v">0</span></div>
+            <div><span>弹药</span><span class="v">霰弹</span></div>
+            <div><span>火力持续</span><span class="v">4.2s</span></div>
+
+            <div class="col-span-2 widthcell top"><span>空膛换弹</span><span class="v w">第一发1.271s</span><span class="v w">第二发2.63s</span></div>
+            <div class="row-span-2 heightcell right "><span>后续</span>  <span class="v">4.2s/发</span></div>
+            <div class="col-span-2 widthcell bottom"><span>战术换弹</span><span class="v w">第一发1.271s</span><span class="v w">第二发2.63s</span></div>
+            <div class="col-span-3 widthcell sm:col-span-4" id="游戏中介绍"><p>脱欧人最喜欢的武器，可能正是因为脱欧才喜欢上的。估计再过两年仓库里堆积成山的SA80也会一起拿出来。</p></div>
+        </div>
+
+
+        <!-- 独有特性 -->
+        <div class="titlebox">
+            <div class="title" id="独有特性">
+                <span>
+                    <div class="triangle-t"></div><div class="triangle-b"></div>
+                </span>
+                <span>
+                    独有特性
+                </span>
+            </div>
+        </div>
+
+        <div class="w-full px-2 py-3 text-xl border border-solid sm:p-6 bg-cellbg border-cellline sm:text-2xl">
+            会炸膛。
+        </div>
+
+        <!-- 持有者和配件 -->
+        <div class="titlebox">
+            <div class="title" id="持有者/配件">
+                <span>
+                    <div class="triangle-t"></div><div class="triangle-b"></div>
+                </span>
+                <span>
+                    可选自定义
+                </span>
+            </div>
+            <div class="support">
+                <span>☑️挂饰</span>
+                <span>☑️挂饰</span>
+                <span>☑️三连发</span>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="w-28">
+                <table class="w-28 users-config">
+                    <tr>
+                        <th>持有者</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="w-full overflow-x-auto">
+                <table class="w-full users-config">
+                    <tr>
+                        <th>红点</th><th>反射</th><th>全息</th><th>1.5x</th><th>2.0x</th><th>2.5x</th><th>3.0x</th><th>特殊</th><th>转角</th><th>垂直</th><th>消焰</th><th>补偿</th><th>消音</th><th>延长</th><th>镭射</th>
+                    </tr>
+
+                    <tr>
+                        <td>2</td><td>1</td><td>2</td><td>1</td><td>2</td><td>1</td><td>2</td><td>1</td><td>2</td><td>1</td><td>2</td><td>1</td><td>2</td><td>1</td><td>支持</td></tr>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+        <div class="w-full text-base text-center sm:hidden text-[#6d7077]"> <<< 可滑动 <<< </div>
+
+        <!-- 后坐力和衰减栏 -->
+        <div class="sm:grid-cols-2 sm:grid ">
+            <!-- 后坐力示意图 -->
+            
+            <div>
+
+                
+                <div class="titlebox">
+                    <div class="title" id="独有特性">
+                        <span>
+                            <div class="triangle-t"></div><div class="triangle-b"></div>
+                        </span>
+                        <span>
+                            后坐力
+                        </span>
+                    </div>
+                    <div class="support">
+                    </div>
+                </div>
+                
+                <div class="flex items-center justify-center py-6 border border-solid bg-cellbg border-cellline sm:h-96">
+                    <div><table class="text-center">
+                        <tr><th class="w-5"></th><th>标准</th><th>消焰器</th><th>补偿器</th><th>制退器</th></tr>
+                        <tr><th>垂直握把</th><td>图</td><td>图</td><td>图</td><td>图</td></tr>
+                        <tr><th>标准</th><td>图</td><td>图</td><td>图</td><td>图</td></tr>
+                    </table></div>
+                </div>
+
+                
+            </div>
+
+            
+                <!-- 伤害衰减 -->
+            <div>  
+                
+                
+                
+                <div class="titlebox">
+                    <div class="title" id="伤害衰减">
+                        <span>
+                            <div class="triangle-t"></div><div class="triangle-b"></div>
+                        </span>
+                        <span>
+                            伤害衰减
+                        </span>
+                    </div>
+                    <div class="support">
+                    </div>
+                </div>
+                
+                <div class="grid pt-8 pl-4 text-2xl border border-solid border-cellline h-96 bg-cellbg" style="grid-template-columns: 2fr 12fr;">
+                    <div class="flex justify-center">
+                            <div>标准</div>
+                    </div>
+                    <div class="grid pl-2 text-4xl h-80" style="grid-template-columns: 25fr 10fr 15fr;grid-template-rows:3rem 7fr 20fr;">
+                        <div></div>
+                        <div class="text-white">47</div>
+                        <div> </div>
+                        <div class="bg-tablecolor chart-cell"> </div>
+                        <div class="chart-diagonal" > 
+                        </div>
+                        <div class="flex items-end text-white">40</div>
+                        <div class="chart-cell gradient"> 起点</div>
+                        <div class="chart-cell gradient"> 25米</div>
+                        <div class="chart-cell gradient">35米</div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                
+            </div>
+            
+        </div>
+        <div class="p-6 text-center">数据比对表｜查看所有的自动步枪｜如何选择配件？</div>
+        </div>
+
+
+    </div>
+    
+
+
+
+
+
+    <div class="text-2xl infobox-gun">
+ 
+        <!-- 主武器 -->
+        <div class="titlebox">
+            <div class="title" id="基本参数">
+                <span>
+                    <div class="triangle-t"></div><div class="triangle-b"></div>
+                </span>
+                <span>
+                    主武器
+                </span>
+            </div>
+            <div class="support">
+                <span>☑️全自动</span>
+                <span>☑️半自动</span>
+                <span>☑️三连发</span>
+            </div>
+        </div>
+        
+        <div class="datatable">
+            <div class="flex flex-col justify-center col-span-3 sm:col-span-1 sm:row-span-3">
+                <img src="src/pic/R6S_wpn_L85A2.png" width="330"/>
+                <span>L85A2突击步枪</span>
+            </div>
+            <div><span>伤害</span><span class="v">47</span></div>
+            <div><span>射速</span><span class="v">750</span></div>
+            <div><span>弹匣</span><span class="v">30<sub>+1</sub>/210</span></div>
+            <div><span>机动</span><span class="v">0</span></div>
+            <div><span>弹药</span><span class="v">霰弹</span></div>
+            <div><span>火力持续</span><span class="v">4.2s</span></div>
+
+            <div class="col-span-2 widthcell top"><span>空膛换弹</span><span class="v w">第一发1.271s</span><span class="v w">第二发2.63s</span></div>
+            <div class="row-span-2 heightcell right "><span>后续</span>  <span class="v">4.2s/发</span></div>
+            <div class="col-span-2 widthcell bottom"><span>战术换弹</span><span class="v w">第一发1.271s</span><span class="v w">第二发2.63s</span></div>
+            <div class="col-span-3 widthcell sm:col-span-4" id="游戏中介绍"><p>脱欧人最喜欢的武器，可能正是因为脱欧才喜欢上的。估计再过两年仓库里堆积成山的SA80也会一起拿出来。</p></div>
+        </div>
+
+
+        <!-- 独有特性 -->
+        <div class="titlebox">
+            <div class="title" id="独有特性">
+                <span>
+                    <div class="triangle-t"></div><div class="triangle-b"></div>
+                </span>
+                <span>
+                    独有特性
+                </span>
+            </div>
+        </div>
+
+        <div class="w-full px-2 py-3 text-xl border border-solid sm:p-6 bg-cellbg border-cellline sm:text-2xl">
+            会炸膛。
+        </div>
+
+        <!-- 持有者和配件 -->
+        <div class="titlebox">
+            <div class="title" id="持有者/配件">
+                <span>
+                    <div class="triangle-t"></div><div class="triangle-b"></div>
+                </span>
+                <span>
+                    可选自定义
+                </span>
+            </div>
+            <div class="support">
+                <span>☑️挂饰</span>
+                <span>☑️挂饰</span>
+                <span>☑️三连发</span>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="w-28">
+                <table class="w-28 users-config">
+                    <tr>
+                        <th>持有者</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="w-full overflow-x-auto">
+                <table class="w-full users-config">
+                    <tr>
+                        <th>红点</th><th>反射</th><th>全息</th><th>1.5x</th><th>2.0x</th><th>2.5x</th><th>3.0x</th><th>特殊</th><th>转角</th><th>垂直</th><th>消焰</th><th>补偿</th><th>消音</th><th>延长</th><th>镭射</th>
+                    </tr>
+
+                    <tr>
+                        <td>2</td><td>1</td><td>2</td><td>1</td><td>2</td><td>1</td><td>2</td><td>1</td><td>2</td><td>1</td><td>2</td><td>1</td><td>2</td><td>1</td><td>支持</td></tr>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+        <div class="w-full text-base text-center sm:hidden text-[#6d7077]"> <<< 可滑动 <<< </div>
+
+        <!-- 后坐力和衰减栏 -->
+        <div class="sm:grid-cols-2 sm:grid ">
+            <!-- 后坐力示意图 -->
+            
+            <div>
+
+                
+                <div class="titlebox">
+                    <div class="title" id="独有特性">
+                        <span>
+                            <div class="triangle-t"></div><div class="triangle-b"></div>
+                        </span>
+                        <span>
+                            后坐力
+                        </span>
+                    </div>
+                    <div class="support">
+                    </div>
+                </div>
+                
+                 <div class="flex items-center justify-center py-6 border border-solid bg-cellbg border-cellline sm:h-96">
+                    <div><table class="text-center">
+                        <tr><th class="w-5"></th><th>标准</th><th>消焰器</th><th>补偿器</th><th>制退器</th></tr>
+                        <tr><th>垂直握把</th><td>图</td><td>图</td><td>图</td><td>图</td></tr>
+                        <tr><th>标准</th><td>图</td><td>图</td><td>图</td><td>图</td></tr>
+                    </table></div>
+                </div>
+
+                
+            </div>
+
+            
+                <!-- 伤害衰减 -->
+            <div>  
+                
+                
+                
+                <div class="titlebox">
+                    <div class="title" id="伤害衰减">
+                        <span>
+                            <div class="triangle-t"></div><div class="triangle-b"></div>
+                        </span>
+                        <span>
+                            伤害衰减
+                        </span>
+                    </div>
+                    <div class="support">
+                    </div>
+                </div>
+                
+                <div class="grid pt-8 pl-4 text-2xl border border-solid border-cellline h-96 bg-cellbg" style="grid-template-columns: 2fr 12fr;">
+                    <div class="flex justify-center">
+                            <div>标准</div>
+                    </div>
+                    <div class="grid pl-2 text-4xl h-80" style="grid-template-columns: 25fr 10fr 15fr;grid-template-rows:3rem 7fr 20fr;">
+                        <div></div>
+                        <div class="text-white">47</div>
+                        <div> </div>
+                        <div class="bg-tablecolor chart-cell"> </div>
+                        <div class="chart-diagonal" > 
+                        </div>
+                        <div class="flex items-end text-white">40</div>
+                        <div class="chart-cell gradient"> 起点</div>
+                        <div class="chart-cell gradient"> 25米</div>
+                        <div class="chart-cell gradient">35米</div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                
+            </div>
+            
+        </div>
+        <div class="p-6 text-center">数据比对表｜查看所有的自动步枪｜如何选择配件？</div>
+        </div>
+
+
+    </div>
+
+        
+
+
+        
+    <div class="h-64"></div>
+    
+
+    <!-- 特殊 -->        
+
+
+
+
+    
+
+<!-- 悬浮武器信息卡 -->
+        <div class="pt-4 pb-3 text-xl text-center border border-solid rounded-lg shadow-xl text-gtext w-72 border-bordercolor bg-bgcolor">
+            <div class="pb-2 font-bold text-white text-1xl">L85A2突击步枪</div>
+            <div class="flex flex-col items-center w-full py-4 border border-solid bg-cellbg border-cellline"
+            ><div><img src="src/pic/R6S_wpn_L85A2.png" width="160"/></div>
+            
+            <table class="mx-4"><tr>
+                <td><img src="src/pic/Badge_sledge.png" class="wid" /></td>
+                <td><img src="src/pic/Badge_sledge.png" class="wid" /></td>
+    
+            </tr></table>
+            
+            </div>
+            <div class="flex items-center justify-between w-full h-12 px-4 border border-solid bg-cellbg border-cellline"><span>伤害</span><span>47</span></div>
+            <div class="flex items-center justify-between w-full h-12 px-4 border border-solid bg-cellbg border-cellline"><span>伤害</span><span>47</span></div>
+            <div class="flex items-center justify-between w-full h-12 px-4 border border-solid bg-cellbg border-cellline"><span>伤害</span><span>47</span></div>
+            <div class="pt-2 text-center">6</div>
+            
+        </div>
+
+
+
+
+
+
+        
+<div class="bg-cellline">
+    
+</div>
+
+
+
+
+
+
+
+    
+</body>
+</html>
