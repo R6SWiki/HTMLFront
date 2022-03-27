@@ -1,0 +1,1224 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+/*武器info*/
+div.infobox-gun{
+@apply border-solid border border-bordercolor bg-bgcolor;
+}
+
+
+/* 基本数据表 */
+div.infobox-gun div.datatable{
+@apply sm:grid-cols-4 grid grid-cols-3
+}
+
+/*  格子 */
+div.infobox-gun div.datatable div{
+@apply py-4 text-center border border-solid bg-cellbg sm:flex border-cellline sm:px-6 items-center
+}
+
+/*  图片以外的格子 */
+div.infobox-gun div.datatable div+div{
+@apply sm:justify-between
+}
+
+/* 数据项 */
+div.infobox-gun div.datatable span{
+@apply text-xl sm:text-2xl font-bold
+}
+
+/* 数据 */
+div.infobox-gun div.datatable span.v{
+@apply pb-1 sm:pb-0 block font-normal sm:inline text-3xl sm:text-2xl text-white sm:text-gtext;
+}
+
+div.infobox-gun div.datatable span.v.w{
+@apply font-normal inline text-2xl;
+}
+
+/* 超宽单元格 */
+div.infobox-gun div.datatable div.widthcell{
+@apply flex justify-between px-6
+}
+
+div.infobox-gun div.datatable div.widthcell.top{
+@apply border-r-0 border-b-0 
+}
+
+div.infobox-gun div.datatable div.widthcell.bottom{
+@apply border-r-0 border-t-0 mt-0
+}
+
+div.infobox-gun div.datatable div.heightcell.right {
+@apply border-l-0 block pt-6
+}
+
+div.infobox-gun div.datatable div.heightcell.right span.v {
+@apply sm:text-3xl text-white block
+}
+
+/* 超宽单元格中的数据 */
+div.infobox-gun div.datatable div.widthcell p{
+@apply text-2xl;
+}
+
+
+
+
+/* 标题盒子 */
+div.infobox-gun div.titlebox{
+@apply flex justify-between h-20 items-end pb-3
+}
+
+/* 小标题块 */
+div.infobox-gun div.titlebox div.title{
+@apply flex items-center
+}
+
+/* 小标题中的文本效果 */
+div.infobox-gun div.titlebox div.title span{
+@apply pr-2 text-3xl font-bold text-white sm:text-3xl md:text-4xl;
+}
+
+/* 支持性 */
+div.infobox-gun div.titlebox div.support span{
+@apply text-lg gap-x-1 sm:text-xl md:text-2xl mr-4
+}
+
+/*三角形*/
+
+div.infobox-gun div.titlebox div.triangle-t{
+border-left:0.7rem solid #AEB1B9;
+    border-top:0.7rem solid rgba(0,0,0,0);
+}
+
+div.infobox-gun div.titlebox div.triangle-b{
+    border-left:0.7rem solid #AEB1B9;
+    border-bottom:0.7rem solid rgba(0,0,0,0);
+}
+
+
+
+
+
+
+
+
+
+/* 干员配件表表身 */
+div.infobox-gun table.users-config td {
+@apply h-40 text-center border border-solid border-cellline bg-cellbg;
+word-break: keep-all;
+}
+
+/* 干员配件表表头 */
+div.infobox-gun table.users-config th {
+@apply h-24 w-24 py-2 px-4 sm:px-1 text-center border border-solid bg-tablecolor border-t_bgcolor text-base; 
+word-break: keep-all;
+}
+
+
+
+
+div.infobox-gun div.chart-diagonal{
+/* background-image: url('data:image/svg+xml;%20charset=utf8,'); */
+@apply bg-no-repeat bg-cover border-0 border-l-2 border-dashed border-chart_dashed bg-diagonal;
+}
+
+div.infobox-gun div.chart-cell{
+@apply text-xl pl-1 flex items-end  border-0 border-l-2 border-dashed border-chart_dashed;
+}
+
+div.infobox-gun div.gradient{
+    @apply bg-gradient-to-t from-bordercolor to-tablecolor;
+}
+
+
+
+#standard:checked ~ .att-standard, #extended:checked ~ .att-extended, #suppressor:checked ~ .att-suppressor {
+    @apply grid !important
+}
+
+#weaponib-att-nav label{
+    @apply text-primary flex items-center justify-center hover:bg-richtabnck active:bg-[#161616]
+}
+
+#standard:checked ~ #weaponib-att-nav label[for="standard"], #extended:checked ~ #weaponib-att-nav label[for="extended"], #suppressor:checked ~ #weaponib-att-nav label[for="suppressor"] {
+    @apply text-white bg-richtabckd
+}
+
+
+/* tailwindcss 样式结束 */
+
+/* 表格页面的宽度拉满 */
+
+body.page-Data_WeaponData_tabx div.container#wiki-body, body.page-Data_WeaponConfig_tabx div.container#wiki-body, body.page-Data_Operator_tabx div.container#wiki-body{
+    width: 100%;
+    max-width: 3000px;
+}
+
+body.page-首页 div.pollembed-wrap div.poll-embed-title {
+  margin-bottom: 0;
+  margin-top:1rem;
+}
+
+body.page-首页 div.pollembed-wrap div.poll-wrap {
+  padding:0;
+  border:none;
+  margin:0;
+
+}
+
+div.pollembed-wrap div.poll-wrap div.progress{
+  background-color: #CCCCCC;
+}
+
+body.page-首页 div.pollembed-wrap div.poll-wrap div.progress{
+  background-color: #303030;
+}
+
+
+
+/* 魔改重定向提示 */
+/* div.huiji-h1-edit-button#huiji-h1-edit-button div#contentSub{
+  display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+} */
+
+/* div.huiji-h1-edit-button#huiji-h1-edit-button div#contentSub span.mw-redirectedfrom{
+  display: block;
+    padding: 2rem;
+    background: #2C2E31;
+    order: 1;
+    width: 100%;
+    align-self: flex-end;
+  
+} */
+
+/*引入外部字体*/
+@font-face {
+    font-family: BebasNeue;
+    src: url('https://fs.huijiwiki.com/www/resources/font/BebasNeue.otf');
+    
+}
+
+@font-face {
+    font-family: ScoutCondRegular;
+    src: url('https://huiji-public.huijistatic.com/r6s/uploads/d/d8/ScoutCond-Regular.ttf');
+}
+
+.scoutcond {
+	font-family: ScoutCondRegular, "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+.bebas {
+    font-family: BebasNeue, "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+/*基准字体*/
+body:not(.ns--1) #wiki-body {
+    font-size: 16px;
+    font-family: "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+table.mw-jsonconfig{
+    color:black;
+}
+
+/*背景逻辑整理：
+首页和首页草稿：显示背景图，正文区域不需要底色；
+其他页面：背景图为固定的图片，正文区域有底色。
+*/
+/*
+body #wiki-outer-body.huiji-css-hook {
+	background: url('https://huiji-public.huijistatic.com/r6s/uploads/9/9e/PageBG.png') no-repeat fixed;
+	background-size:auto
+}
+*/
+
+
+#ca-edit, #ca-huiji-ve-edit,span.edit-active a.mw-editsection-visualeditor{
+    display:none!important;
+}
+
+
+
+#wiki-outer-body.huiji-css-hook #bodyContent {
+    background: #2e3134;
+    padding: 24px;
+}
+
+body.page-首页 #wiki-outer-body.huiji-css-hook,
+body.page-首页草稿 #wiki-outer-body.huiji-css-hook {
+    background: #090f15 url('https://huiji-public.huijistatic.com/r6s/uploads/f/f7/Y7S1-BG.png') no-repeat center 90px;
+}
+
+/* 干员页面的默认背景，以及标题、目录的文本投影效果。 */
+
+ul.hidden-sm.hidden-xs.hidden-print.affix-top.nav.nav-list,
+header.page-header#firstHeading{
+    text-shadow: 0em 0em 1em black;
+}
+
+div.huiji-css-hook#wiki-outer-body{
+    background: #090f15 url('https://huiji-public.huijistatic.com/r6s/uploads/f/f7/Y7S1-BG.png') no-repeat center 90px;
+}
+
+
+/* 干员页面的默认背景，以及标题、目录的文本投影效果。 */
+
+body.page-首页 #wiki-outer-body.huiji-css-hook #bodyContent,
+body.page-首页草稿 #wiki-outer-body.huiji-css-hook #bodyContent {
+    background: transparent;
+}
+
+/*小于556的屏幕移除一些边距，优化显示*/
+@media(max-width:556px) {
+    #wiki-outer-body.huiji-css-hook .wiki-body-section {
+        padding: 0;
+    }
+}
+
+
+.huiji-css-hook #wiki-body {
+    background: transparent;
+    /*    max-width: 1156px;  */
+    /*限制内容区域宽度*/
+}
+
+
+
+/* 替换导航左侧站点名称为一张图片*/
+.subnav .nav-pills >:first-child {
+    background: transparent url("https://huiji-public.huijistatic.com/r6s/uploads/c/c3/Rainbowsix_logo_chs_nav.png") no-repeat scroll 50% 60%;background-size: contain;
+}
+.logo-wiki-user {
+    opacity: 0;
+}
+
+/*使链接可以从中间换行*/
+a {
+    word-break: break-word;
+}
+
+/* 工具类 */
+.nobreak {
+    white-space: nowrap;
+}
+
+.plainlinks a:after {
+    content: "" !important;
+    display: none !important;
+}
+
+.flexfill:after {
+    /*使flex最后一行的元素自动对齐前几行元素*/
+    content: " ";
+    flex: auto;
+}
+
+.img-fit {
+    /*使图片在容器较小时自动缩放到容器宽度*/
+    max-width: 100%;
+    height: auto;
+}
+
+/*使图片宽度强制加大到容器宽度*/
+.img-fullwidth {
+    width: 100%;
+    height: auto;
+}
+
+/*使图片最大宽度不超过容器（img-responsive），且接受文本样式（如居中）*/
+.img-inline-responsive {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+/*大标题*/
+#content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+#content #firstHeading h1 {
+    font-family: BebasNeue, "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    font-size: 4rem;
+}
+
+.huiji-h1-edit-button {
+    font-size: 2rem;
+    bottom: 0;
+}
+
+.mw-editsection-divider {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.2) !important;
+    height: 2rem !important;
+}
+
+#content #firstHeading {
+    border: none;
+}
+
+#content h2 {
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.ns-subject:not(.ns-2) #wiki-body h2 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: block;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+}
+
+#content h3 {
+    font-size: 1.7rem;
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+#content h4 {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    margin-top: 1rem;
+}
+
+/* wikitable和mw-datatable */
+.huiji-css-hook table.wikitable {
+    background-color: #222;
+    border: 1px solid #222;
+}
+
+.huiji-css-hook table.wikitable>tr>th,
+.huiji-css-hook table.wikitable>tr>td,
+.huiji-css-hook table.wikitable>*>tr>th,
+.huiji-css-hook table.wikitable>*>tr>td {
+    border: 1px solid #333;
+    padding: 4px;
+}
+
+.huiji-css-hook table.wikitable>tr>th,
+.huiji-css-hook table.wikitable>*>tr>th {
+    background-color: transparent;
+}
+
+.huiji-css-hook .mw-datatable {
+    color: #8eb1bc;
+    background: transparent
+}
+
+.huiji-css-hook .mw-datatable,
+.huiji-css-hook .mw-datatable td,
+.huiji-css-hook .mw-datatable th {
+    border: 1px solid #14324A;
+}
+
+.huiji-css-hook .mw-datatable th {
+    background-color: transparent
+}
+
+.huiji-css-hook .mw-datatable td {
+    background-color: transparent;
+    border: 1px solid #14324A;
+}
+
+.huiji-css-hook .mw-datatable tr:hover td {
+    background-color: transparent
+}
+
+/*只有水平边界线的表格（tbui-table）*/
+.tbui-table {
+    margin-bottom: 1.75rem;
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+}
+
+.tbui-table>tbody>tr>th,
+.tbui-table>tbody>tr>td {
+    line-height: 1.75;
+    padding: 0.5em;
+}
+
+.tbui-table>tbody>tr>th {
+    border-top: 2px solid rgba(255, 255, 255, .2);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    color: #FFFFFF;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.tbui-table>tbody>tr>td {
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+/*仿游戏UI*/
+.notificationbar {
+    background: rgba(0, 0, 0, 0.55);
+    border: 1px solid #ffffff;
+    padding: 12px;
+    ;
+}
+
+.notificationbar-icon {
+    background: #3bafe8;
+    padding: 4px 16px;
+    border-radius: 16px;
+    margin-right: 16px;
+}
+
+.home-portal-l1,
+.home-portal-l2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.home-portal-notify {
+    padding: 6px;
+    color: #FFFFFF;
+}
+
+.home-portal-container {
+    flex: 1;
+    padding: 6px;
+    /* display: flex; */
+    align-items: center;
+}
+
+.home-portal-container .home-portal-btn {
+    background-color: rgba(0, 0, 0, 0.55);
+    border: 1px solid #3bafe8;
+    width: 100%;
+    height: 100%;
+    display: block;
+    height: 120px;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    font-size: 42px;
+    font-weight: bold;
+    justify-content: center;
+    color: #FFF;
+    letter-spacing: 2px;
+    transition: background-color 0.3s linear;
+}
+
+/* 武器ib的stk变化表 */
+div.weaponib-stk-info-card {
+  border-radius: 0.5rem;
+
+  padding-bottom: 4px;
+  background: #1A1B1D;
+  color: #fff;
+  display: inline-block;
+  border: #0D0F11 1px solid;
+}
+div.weaponib-stk-info-card table tr th,div.weaponib-stk-info-card table tr td {
+  padding:5px 10px;
+  text-align:center;
+  border: #1A1B1D 1px solid;
+  
+}
+
+div.weaponib-stk-info-card table tr td{
+  background: #101112;
+  color: rgb(173 177 186);
+}
+
+
+
+.home-portal-container .home-portal-btn:hover {
+    background-color: #3bafe8;
+}
+
+.home-portal-btn {
+    background-repeat: no-repeat;
+    background-position: left middle;
+}
+
+.home-portal-menu {
+    width: 132px;
+    flex: none;
+}
+
+.home-portal-menu .home-portal-btn {
+    border-left-width: 8px;
+}
+
+.home-portal-operator .home-portal-btn {
+    background-image: url(https://huiji-public.huijistatic.com/r6s/uploads/a/a8/%E9%A6%96%E9%A1%B5%E6%8C%89%E9%92%AE-%E7%89%B9%E5%8B%A4%E5%B9%B2%E5%91%98.png);
+}
+
+.home-portal-gadget .home-portal-btn {
+    background-image: url(https://huiji-public.huijistatic.com/r6s/uploads/4/4f/%E9%A6%96%E9%A1%B5%E6%8C%89%E9%92%AE-%E6%AD%A6%E5%99%A8%E8%A3%85%E5%A4%87.png);
+}
+
+.home-portal-maps .home-portal-btn {
+    background-image: url(https://huiji-public.huijistatic.com/r6s/uploads/6/60/%E9%A6%96%E9%A1%B5%E6%8C%89%E9%92%AE-%E5%9C%B0%E5%9B%BE.png);
+}
+
+.home-portal-docs .home-portal-btn {
+    background-image: url(https://huiji-public.huijistatic.com/r6s/uploads/6/68/%E9%A6%96%E9%A1%B5%E6%8C%89%E9%92%AE-%E6%96%87%E6%A1%A3.png);
+}
+
+.home-portal-pvp .home-portal-btn {
+    background-image: url(https://huiji-public.huijistatic.com/r6s/uploads/d/da/%E9%A6%96%E9%A1%B5%E6%8C%89%E9%92%AE-%E7%94%B5%E7%AB%9E.png);
+}
+
+.home-portal-maps .home-portal-btn,
+.home-portal-docs .home-portal-btn,
+.home-portal-pvp .home-portal-btn {
+    background-size: 60px;
+    background-position: 30px center;
+    padding-left: 2em;
+}
+
+.home-portal-gadget .home-portal-btn {
+    background-size: contain;
+    background-position: -10px center;
+    padding-left: 1.5em;
+}
+
+.home-portal-operator .home-portal-btn {
+    background-size: contain;
+    background-position: -20px center;
+    padding-left: 2.5em;
+}
+
+/*20200223 首页布局改造 by summerset*/
+/*首页底部背景*/
+
+/*@media (max-width: 768px){*/
+	.home-backgroundcard {
+	    background-color: rgba(48, 48, 48, 0.5);
+	    padding: 24px;
+	}
+/*}*/
+
+
+@media (max-width: 767px) {
+    /*窄屏兼容*/
+
+    .home-portal-container {
+        width: auto;
+        flex: 1;
+    }
+
+    .home-portal-container .home-portal-btn {
+        font-size: 18px;
+        padding: 0;
+        background-size: auto 50px;
+        background-position: center 20px;
+        padding-top: 60px;
+        white-space:nowrap;
+    }
+
+    .home-portal-menu .home-portal-btn {
+        border-left-width: 1px;
+        padding-top: 0;
+        font-size: 42px;
+    }
+    
+	.home-backgroundcard {
+    background-color: rgba(48, 48, 48, 0);
+    padding: 0px;
+	}
+	
+	.homecard {
+		border: 1px solid rgb(48, 48, 48);
+	}
+	
+}
+
+
+
+/*黑黄条通知区域*/
+.home-announcement-outer {
+    background: #000 url('https://huiji-public.huijistatic.com/r6s/uploads/9/94/Blackyellowstripe.jpg') repeat;
+    background-size: 48px;
+    padding: 12px;
+}
+
+.home-announcement-inner {
+    background: #141414;
+    overflow: hidden;
+    padding: 12px;
+}
+
+/*分栏+卡片*/
+.homegrid-container {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    column-gap: 18px;
+}
+
+.homegrid-container.home-beta{
+    grid-template-columns: 8fr 4fr;
+}
+
+.homegrid-top {
+    grid-column: 1/3;
+    grid-row: 1/1;
+}
+
+.homegrid-left {
+    grid-row: 2/2;
+}
+
+.homegrid-right {
+    grid-row: 2/2;
+}
+
+@media (max-width: 767px) {
+    .homegrid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .homegrid-top {
+        grid-column: 1/2;
+        grid-row: 1/1
+    }
+
+    .homegrid-left {
+        grid-column: 1/2;
+        grid-row: 2/3
+    }
+
+    .homegrid-right {
+        grid-column: 1/2;
+        grid-row: 3/4
+    }
+}
+
+
+.homecard {
+    background-color: #141414;
+    margin-bottom: 18px;
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.homecard:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.homecard .card-title {
+    padding: 24px 24px 0px 24px;
+}
+.homecard .card-content {
+	    padding: 10px 24px 24px 24px;
+}
+
+.homecard.homecard-type1 .card-title {
+    font-size: 32px;
+    color: #FFF;
+    line-height: 1.2;
+}
+
+.homecard.homecard-type2 {
+    padding: 12px;
+}
+
+.homecard.homecard-type2 .card-title {
+    font-size: 24px;
+
+    color: #FFF;
+    border: 1px solid #FFF;
+    white-space: nowrap;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.homecard.homecard-type2 .card-content {
+    padding: 12px 0;
+}
+
+/*每周挑战*/
+.weeklychallenge {
+    display: flex;
+    flex-direction: row;
+    margin: 8px 0;
+}
+
+.weeklychallenge .challenge-icon {
+    width: 56px;
+    padding: 6px;
+}
+
+.weeklychallenge .challenge-content {
+    flex: 1 1;
+    color: #FFF;
+    line-height: 1.4;
+}
+
+.weeklychallenge .challenge-title {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 6px;
+}
+
+.weeklychallenge .challenge-text {
+    color: #CCC;
+    padding-bottom: 6px;
+}
+
+.weeklychallenge .challenge-rewarditem {
+    padding-bottom: 6px;
+    flex:1;
+}
+
+.weeklychallenge .challenge-rewardbox {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2px 0;
+}
+
+.weeklychallenge .challenge-rewarditem img {
+    vertical-align: middle;
+}
+
+
+
+.challenge-group dt {
+    font-size: 24px;
+    color: #FFF;
+}
+
+.challenge-group dd {}
+
+.challenge-group dd .digit {
+    font-family: BebasNeue;
+    font-size: 24px;
+    padding: 4px;
+    color: #FFF;
+}
+
+.home-version {
+    display: grid;
+    grid-template-columns: 140px auto;
+    grid-gap: 12px;
+}
+
+@media (max-width: 767px) {
+    .home-version {
+        grid-template-columns: auto;
+        grid-auto-flow: row;
+    }
+}
+
+.home-version-item {
+    background: #0A0A0A;
+    border: 1px solid #272727;
+    padding: 6px 12px;
+}
+
+.home-version-item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+
+/*典范词条样式*/
+.formalentry {
+    display: grid;
+    grid-template-columns: auto 120px;
+    grid-gap: 18px;
+}
+
+.formalentry.home-beta {
+
+    grid-template-columns: 120px auto ;
+
+}
+
+@media (max-width: 556px) {
+	/*窄屏下调整网格*/
+    .formalentry {
+        grid-template-columns:auto
+
+    }
+
+}
+
+.formalentry .formalentry-image {justify-self:center;
+}
+
+.formalentry .formalentry-content {
+}
+/*地图列表样式*/
+.maplist-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 18px;
+}
+
+@media (max-width: 991px) {
+    .maplist-grid {
+        grid-template-columns: 1fr 1fr;
+        /*窄屏下显示两栏*/
+    }
+}
+
+.maplist-item {
+    position: relative;
+}
+
+.maplist-linkbox {}
+
+.maplist-linkbox>a {
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: flex-end;
+    color: #CCC !important;
+    font-size: 18px;
+    text-shadow: 0 0 5px #000;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid #7c7d7f;
+    transition: border-color 0.1s, color 0.1s, background-color 0.1s;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.maplist-linkbox>a:hover {
+    background: transparent;
+    border-color: #FFBB00;
+    color: #FFF !important;
+}
+/*适用于横长条图的兼容  by summerset 20210317*/
+.maplist-imagebox {
+    height: 100%;
+}
+
+.maplist-imagebox img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*mbox*/
+.mbox-inner {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 12px;
+}
+
+/*code和pre*/
+/*原始样式修正*/
+code {
+    color: #8dff72;
+    background: #000000;
+}
+
+.huiji-css-hook pre {
+    white-space: pre-wrap;
+}
+
+.huiji-css-hook code {
+    background-color: #111111;
+    color: #d3fd24;
+    font-weight: normal;
+}
+
+.huiji-css-hook .prettyprint {
+    background-color: #111111;
+    border: none;
+}
+
+.huiji-css-hook .prettyprint .com {
+    color: #5cb85c;
+}
+
+.huiji-css-hook .prettyprint .lit {
+    color: #2e92da;
+}
+
+.huiji-css-hook .prettyprint .pun,
+.huiji-css-hook .prettyprint .opn,
+.huiji-css-hook .prettyprint .clo {
+    color: #999;
+}
+
+.huiji-css-hook .prettyprint .fun {
+    color: #dc322f;
+}
+
+.huiji-css-hook .prettyprint .str,
+.huiji-css-hook .prettyprint .atv {
+    color: #D14;
+}
+
+.huiji-css-hook .prettyprint .kwd,
+.huiji-css-hook .prettyprint .linenums .tag {
+    color: #7a57c9;
+}
+
+.huiji-css-hook .prettyprint .typ,
+.huiji-css-hook .prettyprint .atn,
+.huiji-css-hook .prettyprint .dec,
+.huiji-css-hook .prettyprint .var {
+    color: teal;
+}
+
+.huiji-css-hook .prettyprint .pln {
+    color: #ffffff;
+}
+
+.huiji-css-hook .prettyprint.linenums {
+    -webkit-box-shadow: inset 40px 0 0 #000000, inset 41px 0 0 #222222;
+    -moz-box-shadow: inset 40px 0 0 #000000, inset 41px 0 0 #222222;
+    box-shadow: inset 40px 0 0 #000000, inset 41px 0 0 #222222;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+.huiji-css-hook .prettyprint ol.linenums {}
+
+.huiji-css-hook .prettyprint ol.linenums li {
+    padding-left: 12px;
+    color: #bebec5;
+    line-height: 18px;
+    text-shadow: none;
+}
+
+.r6mbox {
+    overflow: auto;
+    margin: 0.5em auto;
+    border-left: 10px solid transparent;
+    background-color: #202020;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+}
+
+.r6mbox-icon {
+    display: flex;
+    align-items: center;
+}
+
+.r6mbox-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.r6mbox-icon,
+.r6mbox-content {
+    padding: 16px;
+}
+
+.r6mbox-content {
+    flex: 1 1;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.r6mbox-primary {
+    border-left-color: #ffc800;
+}
+
+.r6mbox-success {
+    border-left-color: #5cb85c;
+}
+
+.r6mbox-info {
+    border-left-color: #3498db;
+}
+
+.r6mbox-warning {
+    border-left-color: #f35612;
+}
+
+.r6mbox-danger {
+    border-left-color: #c0392b;
+}
+
+.r6mbox-icon img {
+    vertical-align: top;
+}
+
+.contour-of-height-comparison {
+	background: #454545 url('https://huiji-public.huijistatic.com/r6s/uploads/6/67/Height_line_401.png') bottom
+}
+
+.battle-pass {
+	background: #454545 url('https://huiji-public.huijistatic.com/r6s/uploads/2/23/Road_to_si_2021.jpg') no-repeat right center;
+	background-size:cover;
+}
+
+.mapqueue-plus {
+	background-color:#9ac725;
+	padding:3px;
+	color:white;
+	border-radius:3px;
+}
+
+.mapqueue-minus {
+	background-color:#ff4a05;
+	padding:3px;
+	color:white;
+	border-radius:3px;
+}
+
+
+.mwe-popups, .mwe-popups-container {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+
+.nav-header {
+    margin-top: 10px;
+    background-color: #141414;
+    color: #3bafe8;
+    padding: 3px 7px;
+}
+
+.home-version-badge-chstext{
+letter-spacing: 8px;
+}
+
+.skin-quality-box{
+    display: inline-grid;
+    grid-template-columns: 28px 24px auto;
+    overflow: hidden;
+    position: relative;
+    margin: 0 3px;
+    line-height:1.5;
+}
+
+.skin-quality-icon{
+    display: inline-block;
+    padding-left: 0.3em;
+}
+
+.skin-quality-triangle{
+	border: 0 solid transparent;
+    border-width: 0 0 1.5em 1.5em;
+    height: 100%;
+}
+
+.skin-quality-text{
+    height: 100%;
+    padding-right: 0.6em;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.richtab-map{
+	display:inline-flex;
+}
+.nav-map{
+	display:inline-grid;
+}
+
+
+
+
+
+
+
+
+
+
+
+.colorless{
+	filter: grayscale(100%);
+}
+
+img.operatorname-badge{
+	vertical-align:-6px;
+	width: 25px;
+    aspect-ratio: auto 25 / 25;
+    height: 25px;
+	
+}
+
+span.operatorname-badge{
+	vertical-align: -5px;
+    width: 24px;
+    height: 24px;
+    background-image: url(//huiji-public.huijistatic.com/r6s/uploads/e/e1/Operator_badge_black_border_96px.png);
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    display: inline-block;
+    background-size: auto 24px;
+}
+
+@media (max-width: 769px) {
+.editnotice-i	{
+     display:none;
+	}
+	
+	.home-version-badge {
+font-family: ScoutCondRegular;
+line-height: 1.5em;
+margin: auto;
+}
+
+.home-version-badge-badge{
+	display: inline-block;
+margin: auto;
+vertical-align: 1.5em;
+}
+
+.home-version-badge-text{
+	display: inline-block;
+	padding-left: 1em;
+}
+
+.home-version-badge img{
+	width:40px;height:auto;
+} 
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+.editnotice-t	{
+     display:none;
+	}
+	
+	
+.home-version-badge {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	margin: 15px;
+	text-align: center;
+	font-family: ScoutCondRegular;
+	line-height: 1.5em;
+}
+
+.home-version-badge-chstext{
+	padding-left: 8px;
+}
+
+.home-version-badge-badge{
+margin: 20px 20px 0px;
+}
+
+}
