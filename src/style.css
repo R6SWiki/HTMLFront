@@ -7,8 +7,10 @@ ContentModel=#css#
 ContentFormat=#text/css#
 [END_PAGE_INFO] --%> */
 
+
 /*本站的部分CSS基于tailwindCSS库实现，请使用tailwindCSS工程文件来维护*/
 /*项目地址：https://github.com/R6SWiki/HTMLFront*/
+
 
 /* @tailwind base; */
 @tailwind components;
@@ -111,10 +113,9 @@ div.infobox-gun div.titlebox div.triangle-b{
 }
 
 
-
-
-
-
+body.page-KiXSTAr{
+    filter: grayscale(100%);
+}
 
 
 
@@ -278,6 +279,7 @@ header.page-header#firstHeading{
 div.huiji-css-hook#wiki-outer-body{
     background: #090f15 url('https://huiji-public.huijistatic.com/r6s/uploads/f/f7/Y7S1-BG.png') no-repeat center 90px;
 }
+
 
 
 /* 干员页面的默认背景，以及标题、目录的文本投影效果。 */
