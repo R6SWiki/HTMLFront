@@ -1,8 +1,12 @@
 # HTML前端文件
 本站的css有部分是通过TailwindCSS实现的，`style.css`是本站的tailwind核心文件。
 
-## 内容说明
-`src`目录下除了css文件外还有一些模板的设计方案，以及若干插图文件。不过插图文件可能已经不需要了。
+## 内容
+`src`目录下除了css文件外还有一些模板的设计方案，以及若干插图文件`image`。不过插图文件可能已经不需要了。
+目前设计方案（`html`文件）：
+武器ib：`src\infobox-weapon.html`
+特勤干员首页设计：`src\oper.html`
+武器信息悬浮卡：`src\weaponinfo-card.html`
 
 ## 使用方法
 
