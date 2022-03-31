@@ -16,6 +16,8 @@ ContentFormat=#text/css#
 @tailwind components;
 @tailwind utilities;
 
+
+
 /*武器info*/
 div.infobox-gun{
 @apply border-solid border border-bordercolor bg-bgcolor;

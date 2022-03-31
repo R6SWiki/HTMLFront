@@ -1,0 +1,1779 @@
+/* <%-- [PAGE_INFO]
+Comment=#Please do not remove this struct. It's record contains some important informations of edit. This struct will be removed automatically after you push edits.#
+PageTitle=#MediaWiki:Common.css#
+PageID=#608#
+RevisionID=#22972#
+ContentModel=#css#
+ContentFormat=#text/css#
+[END_PAGE_INFO] --%> */
+
+/*本站的部分CSS基于tailwindCSS库实现，请使用tailwindCSS工程文件来维护*/
+
+/*项目地址：https://github.com/R6SWiki/HTMLFront*/
+
+/* @tailwind base; */
+
+.col-span-3{
+  grid-column:span 3 / span 3;
+}
+
+.col-span-1{
+  grid-column:span 1 / span 1;
+}
+
+.col-span-12{
+  grid-column:span 12 / span 12;
+}
+
+.col-span-2{
+  grid-column:span 2 / span 2;
+}
+
+.row-span-3{
+  grid-row:span 3 / span 3;
+}
+
+.row-span-2{
+  grid-row:span 2 / span 2;
+}
+
+.mx-4{
+  margin-left:1rem;
+  margin-right:1rem;
+}
+
+.mt-2{
+  margin-top:0.5rem;
+}
+
+.ml-2{
+  margin-left:0.5rem;
+}
+
+.inline-block{
+  display:inline-block;
+}
+
+.flex{
+  display:flex;
+}
+
+.table{
+  display:table;
+}
+
+.grid{
+  display:grid;
+}
+
+.hidden{
+  display:none;
+}
+
+.h-96{
+  height:24rem;
+}
+
+.h-80{
+  height:20rem;
+}
+
+.h-64{
+  height:16rem;
+}
+
+.h-12{
+  height:3rem;
+}
+
+.w-full{
+  width:100%;
+}
+
+.w-28{
+  width:7rem;
+}
+
+.w-5{
+  width:1.25rem;
+}
+
+.w-72{
+  width:18rem;
+}
+
+.w-24{
+  width:6rem;
+}
+
+.grid-flow-col{
+  grid-auto-flow:column;
+}
+
+.grid-rows-3{
+  grid-template-rows:repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-5{
+  grid-template-rows:repeat(5, minmax(0, 1fr));
+}
+
+.flex-col{
+  flex-direction:column;
+}
+
+.items-end{
+  align-items:flex-end;
+}
+
+.items-center{
+  align-items:center;
+}
+
+.justify-center{
+  justify-content:center;
+}
+
+.justify-between{
+  justify-content:space-between;
+}
+
+.overflow-x-auto{
+  overflow-x:auto;
+}
+
+.rounded-lg{
+  border-radius:0.5rem;
+}
+
+.border{
+  border-width:1px;
+}
+
+.border-2{
+  border-width:2px;
+}
+
+.border-solid{
+  border-style:solid;
+}
+
+.border-cellline{
+  --tw-border-opacity:1;
+  border-color:rgb(29 31 35 / var(--tw-border-opacity));
+}
+
+.border-bordercolor{
+  --tw-border-opacity:1;
+  border-color:rgb(13 15 17 / var(--tw-border-opacity));
+}
+
+.border-white{
+  --tw-border-opacity:1;
+  border-color:rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.bg-cellbg{
+  --tw-bg-opacity:1;
+  background-color:rgb(14 15 17 / var(--tw-bg-opacity));
+}
+
+.bg-tablecolor{
+  --tw-bg-opacity:1;
+  background-color:rgb(38 40 45 / var(--tw-bg-opacity));
+}
+
+.bg-bgcolor{
+  --tw-bg-opacity:1;
+  background-color:rgb(28 29 32 / var(--tw-bg-opacity));
+}
+
+.bg-cellline{
+  --tw-bg-opacity:1;
+  background-color:rgb(29 31 35 / var(--tw-bg-opacity));
+}
+
+.p-6{
+  padding:1.5rem;
+}
+
+.px-2{
+  padding-left:0.5rem;
+  padding-right:0.5rem;
+}
+
+.py-3{
+  padding-top:0.75rem;
+  padding-bottom:0.75rem;
+}
+
+.py-6{
+  padding-top:1.5rem;
+  padding-bottom:1.5rem;
+}
+
+.py-4{
+  padding-top:1rem;
+  padding-bottom:1rem;
+}
+
+.px-4{
+  padding-left:1rem;
+  padding-right:1rem;
+}
+
+.pt-8{
+  padding-top:2rem;
+}
+
+.pl-4{
+  padding-left:1rem;
+}
+
+.pl-2{
+  padding-left:0.5rem;
+}
+
+.pt-4{
+  padding-top:1rem;
+}
+
+.pb-3{
+  padding-bottom:0.75rem;
+}
+
+.pb-2{
+  padding-bottom:0.5rem;
+}
+
+.pt-2{
+  padding-top:0.5rem;
+}
+
+.text-center{
+  text-align:center;
+}
+
+.text-2xl{
+  font-size:1.5rem;
+  line-height:2rem;
+}
+
+.text-xl{
+  font-size:1.25rem;
+  line-height:1.75rem;
+}
+
+.text-base{
+  font-size:1rem;
+  line-height:1.5rem;
+}
+
+.text-4xl{
+  font-size:2.25rem;
+  line-height:2.5rem;
+}
+
+.font-bold{
+  font-weight:700;
+}
+
+.text-gtext{
+  --tw-text-opacity:1;
+  color:rgb(173 177 186 / var(--tw-text-opacity));
+}
+
+.text-\[\#6d7077\]{
+  --tw-text-opacity:1;
+  color:rgb(109 112 119 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity:1;
+  color:rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.shadow-xl{
+  --tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.transition-all{
+  transition-property:all;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:150ms;
+}
+
+.delay-75{
+  transition-delay:75ms;
+}
+
+.duration-300{
+  transition-duration:300ms;
+}
+
+.ease-in{
+  transition-timing-function:cubic-bezier(0.4, 0, 1, 1);
+}
+
+/*武器info*/
+
+div.infobox-gun{
+  border-width:1px;
+  border-style:solid;
+  --tw-border-opacity:1;
+  border-color:rgb(13 15 17 / var(--tw-border-opacity));
+  --tw-bg-opacity:1;
+  background-color:rgb(28 29 32 / var(--tw-bg-opacity));
+}
+
+/* 基本数据表 */
+
+div.infobox-gun div.datatable{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0, 1fr));
+}
+
+@media (min-width: 640px){
+  div.infobox-gun div.datatable{
+    grid-template-columns:repeat(4, minmax(0, 1fr));
+  }
+}
+
+/*  格子 */
+
+div.infobox-gun div.datatable div{
+  align-items:center;
+  border-width:1px;
+  border-style:solid;
+  --tw-border-opacity:1;
+  border-color:rgb(29 31 35 / var(--tw-border-opacity));
+  --tw-bg-opacity:1;
+  background-color:rgb(14 15 17 / var(--tw-bg-opacity));
+  padding-top:1rem;
+  padding-bottom:1rem;
+  text-align:center;
+}
+
+@media (min-width: 640px){
+  div.infobox-gun div.datatable div{
+    display:flex;
+  }
+
+  div.infobox-gun div.datatable div{
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+  }
+}
+
+/*  图片以外的格子 */
+
+@media (min-width: 640px){
+  div.infobox-gun div.datatable div+div{
+    justify-content:space-between;
+  }
+}
+
+/* 数据项 */
+
+div.infobox-gun div.datatable span{
+  font-size:1.25rem;
+  line-height:1.75rem;
+  font-weight:700;
+}
+
+@media (min-width: 640px){
+  div.infobox-gun div.datatable span{
+    font-size:1.5rem;
+    line-height:2rem;
+  }
+}
+
+/* 数据 */
+
+div.infobox-gun div.datatable span.v{
+  display:block;
+  padding-bottom:0.25rem;
+  font-size:1.875rem;
+  line-height:2.25rem;
+  font-weight:400;
+  --tw-text-opacity:1;
+  color:rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px){
+  div.infobox-gun div.datatable span.v{
+    display:inline;
+  }
+
+  div.infobox-gun div.datatable span.v{
+    padding-bottom:0px;
+  }
+
+  div.infobox-gun div.datatable span.v{
+    font-size:1.5rem;
+    line-height:2rem;
+  }
+
+  div.infobox-gun div.datatable span.v{
+    --tw-text-opacity:1;
+    color:rgb(173 177 186 / var(--tw-text-opacity));
+  }
+}
+
+div.infobox-gun div.datatable span.v.w{
+  display:inline;
+  font-size:1.5rem;
+  line-height:2rem;
+  font-weight:400;
+}
+
+/* 超宽单元格 */
+
+div.infobox-gun div.datatable div.widthcell{
+  display:flex;
+  justify-content:space-between;
+  padding-left:1.5rem;
+  padding-right:1.5rem;
+}
+
+div.infobox-gun div.datatable div.widthcell.top{
+  border-right-width:0px;
+  border-bottom-width:0px;
+}
+
+div.infobox-gun div.datatable div.widthcell.bottom{
+  margin-top:0px;
+  border-right-width:0px;
+  border-top-width:0px;
+}
+
+div.infobox-gun div.datatable div.heightcell.right{
+  display:block;
+  border-left-width:0px;
+  padding-top:1.5rem;
+}
+
+div.infobox-gun div.datatable div.heightcell.right span.v{
+  display:block;
+  --tw-text-opacity:1;
+  color:rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px){
+  div.infobox-gun div.datatable div.heightcell.right span.v{
+    font-size:1.875rem;
+    line-height:2.25rem;
+  }
+}
+
+/* 超宽单元格中的数据 */
+
+div.infobox-gun div.datatable div.widthcell p{
+  font-size:1.5rem;
+  line-height:2rem;
+}
+
+/* 标题盒子 */
+
+div.infobox-gun div.titlebox{
+  display:flex;
+  height:5rem;
+  align-items:flex-end;
+  justify-content:space-between;
+  padding-bottom:0.75rem;
+}
+
+/* 小标题块 */
+
+div.infobox-gun div.titlebox div.title{
+  display:flex;
+  align-items:center;
+}
+
+/* 小标题中的文本效果 */
+
+div.infobox-gun div.titlebox div.title span{
+  padding-right:0.5rem;
+  font-size:1.875rem;
+  line-height:2.25rem;
+  font-weight:700;
+  --tw-text-opacity:1;
+  color:rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px){
+  div.infobox-gun div.titlebox div.title span{
+    font-size:1.875rem;
+    line-height:2.25rem;
+  }
+}
+
+@media (min-width: 768px){
+  div.infobox-gun div.titlebox div.title span{
+    font-size:2.25rem;
+    line-height:2.5rem;
+  }
+}
+
+/* 支持性 */
+
+div.infobox-gun div.titlebox div.support span{
+  margin-right:1rem;
+  -moz-column-gap:0.25rem;
+       column-gap:0.25rem;
+  font-size:1.125rem;
+  line-height:1.75rem;
+}
+
+@media (min-width: 640px){
+  div.infobox-gun div.titlebox div.support span{
+    font-size:1.25rem;
+    line-height:1.75rem;
+  }
+}
+
+@media (min-width: 768px){
+  div.infobox-gun div.titlebox div.support span{
+    font-size:1.5rem;
+    line-height:2rem;
+  }
+}
+
+/*三角形*/
+
+div.infobox-gun div.titlebox div.triangle-t{
+  border-left:0.7rem solid #AEB1B9;
+  border-top:0.7rem solid rgba(0,0,0,0);
+}
+
+div.infobox-gun div.titlebox div.triangle-b{
+  border-left:0.7rem solid #AEB1B9;
+  border-bottom:0.7rem solid rgba(0,0,0,0);
+}
+
+body.page-KiXSTAr{
+  filter: grayscale(100%);
+}
+
+/* 干员配件表表身 */
+
+div.infobox-gun table.users-config td{
+  height:10rem;
+  border-width:1px;
+  border-style:solid;
+  --tw-border-opacity:1;
+  border-color:rgb(29 31 35 / var(--tw-border-opacity));
+  --tw-bg-opacity:1;
+  background-color:rgb(14 15 17 / var(--tw-bg-opacity));
+  text-align:center;
+  word-break: keep-all;
+}
+
+/* 干员配件表表头 */
+
+div.infobox-gun table.users-config th{
+  height:6rem;
+  width:6rem;
+  border-width:1px;
+  border-style:solid;
+  --tw-border-opacity:1;
+  border-color:rgb(30 31 35 / var(--tw-border-opacity));
+  --tw-bg-opacity:1;
+  background-color:rgb(38 40 45 / var(--tw-bg-opacity));
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+  padding-left:1rem;
+  padding-right:1rem;
+  text-align:center;
+  font-size:1rem;
+  line-height:1.5rem;
+}
+
+@media (min-width: 640px){
+  div.infobox-gun table.users-config th{
+    padding-left:0.25rem;
+    padding-right:0.25rem;
+  }
+}
+
+div.infobox-gun table.users-config th {
+  word-break: keep-all;
+}
+
+div.infobox-gun div.chart-diagonal{
+  /* background-image: url('data:image/svg+xml;%20charset=utf8,'); */
+  border-width:0px;
+  border-left-width:2px;
+  border-style:dashed;
+  --tw-border-opacity:1;
+  border-color:rgb(103 105 110 / var(--tw-border-opacity));
+  background-image:url('data:image/svg+xml;%20charset=utf8,%3Csvg%20preserveAspectRatio=%22none%20meet%22%20width=%22100%25%22%20height=%22100%25%22%20viewBox=%220%200%201%201%22%20version=%221.1%22%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20xml:space=%22preserve%22%20xmlns:serif=%22http://www.serif.com/%22%20style=%22fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;%22%3E%0A%20%20%20%20%3Cg%20transform=%22matrix(0.00166667,0,0,0.00166667,0,0)%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d=%22M600,600L0,0L0,600L600,600Z%22%20style=%22fill:rgb(38,40,45);%22/%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E%0A');
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+div.infobox-gun div.chart-cell{
+  display:flex;
+  align-items:flex-end;
+  border-width:0px;
+  border-left-width:2px;
+  border-style:dashed;
+  --tw-border-opacity:1;
+  border-color:rgb(103 105 110 / var(--tw-border-opacity));
+  padding-left:0.25rem;
+  font-size:1.25rem;
+  line-height:1.75rem;
+}
+
+div.infobox-gun div.gradient{
+  background-image:linear-gradient(to top, var(--tw-gradient-stops));
+  --tw-gradient-from:#0D0F11;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgb(13 15 17 / 0));
+  --tw-gradient-to:#26282D;
+}
+
+#standard:checked ~ .att-standard, #extended:checked ~ .att-extended, #suppressor:checked ~ .att-suppressor{
+  display:grid !important;
+}
+
+#weaponib-att-nav label{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  --tw-text-opacity:1;
+  color:rgb(255 200 0 / var(--tw-text-opacity));
+}
+
+#weaponib-att-nav label:hover{
+  --tw-bg-opacity:1;
+  background-color:rgb(56 56 56 / var(--tw-bg-opacity));
+}
+
+#weaponib-att-nav label:active{
+  --tw-bg-opacity:1;
+  background-color:rgb(22 22 22 / var(--tw-bg-opacity));
+}
+
+#standard:checked ~ #weaponib-att-nav label[for="standard"], #extended:checked ~ #weaponib-att-nav label[for="extended"], #suppressor:checked ~ #weaponib-att-nav label[for="suppressor"]{
+  --tw-bg-opacity:1;
+  background-color:rgb(38 38 38 / var(--tw-bg-opacity));
+  --tw-text-opacity:1;
+  color:rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* tailwindcss 样式结束 */
+
+/* 表格页面的宽度拉满 */
+
+body.page-Data_WeaponData_tabx div.container#wiki-body, body.page-Data_WeaponConfig_tabx div.container#wiki-body, body.page-Data_Operator_tabx div.container#wiki-body{
+  width: 100%;
+  max-width: 3000px;
+}
+
+body.page-首页 div.pollembed-wrap div.poll-embed-title {
+  margin-bottom: 0;
+  margin-top:1rem;
+}
+
+body.page-首页 div.pollembed-wrap div.poll-wrap {
+  padding:0;
+  border:none;
+  margin:0;
+}
+
+div.pollembed-wrap div.poll-wrap div.progress{
+  background-color: #CCCCCC;
+}
+
+body.page-首页 div.pollembed-wrap div.poll-wrap div.progress{
+  background-color: #303030;
+}
+
+/* 魔改重定向提示 */
+
+/* div.huiji-h1-edit-button#huiji-h1-edit-button div#contentSub{
+  display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+} */
+
+/* div.huiji-h1-edit-button#huiji-h1-edit-button div#contentSub span.mw-redirectedfrom{
+  display: block;
+    padding: 2rem;
+    background: #2C2E31;
+    order: 1;
+    width: 100%;
+    align-self: flex-end;
+  
+} */
+
+/*引入外部字体*/
+
+@font-face {
+  font-family: BebasNeue;
+
+  src: url('https://fs.huijiwiki.com/www/resources/font/BebasNeue.otf');
+}
+
+@font-face {
+  font-family: ScoutCondRegular;
+
+  src: url('https://huiji-public.huijistatic.com/r6s/uploads/d/d8/ScoutCond-Regular.ttf');
+}
+
+.scoutcond {
+  font-family: ScoutCondRegular, "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+.bebas {
+  font-family: BebasNeue, "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+/*基准字体*/
+
+body:not(.ns--1) #wiki-body {
+  font-size: 16px;
+  font-family: "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+table.mw-jsonconfig{
+  color:black;
+}
+
+/*背景逻辑整理：
+首页和首页草稿：显示背景图，正文区域不需要底色；
+其他页面：背景图为固定的图片，正文区域有底色。
+*/
+
+/*
+body #wiki-outer-body.huiji-css-hook {
+	background: url('https://huiji-public.huijistatic.com/r6s/uploads/9/9e/PageBG.png') no-repeat fixed;
+	background-size:auto
+}
+*/
+
+#ca-edit, #ca-huiji-ve-edit,span.edit-active a.mw-editsection-visualeditor{
+  display:none!important;
+}
+
+#wiki-outer-body.huiji-css-hook #bodyContent {
+  background: #2e3134;
+  padding: 24px;
+}
+
+body.page-首页 #wiki-outer-body.huiji-css-hook,
+body.page-首页草稿 #wiki-outer-body.huiji-css-hook {
+  background: #090f15 url('https://huiji-public.huijistatic.com/r6s/uploads/f/f7/Y7S1-BG.png') no-repeat center 90px;
+}
+
+/* 干员页面的默认背景，以及标题、目录的文本投影效果。 */
+
+ul.hidden-sm.hidden-xs.hidden-print.affix-top.nav.nav-list,
+header.page-header#firstHeading{
+  text-shadow: 0em 0em 1em black;
+}
+
+div.huiji-css-hook#wiki-outer-body{
+  background: #090f15 url('https://huiji-public.huijistatic.com/r6s/uploads/f/f7/Y7S1-BG.png') no-repeat center 90px;
+}
+
+/* 干员页面的默认背景，以及标题、目录的文本投影效果。 */
+
+body.page-首页 #wiki-outer-body.huiji-css-hook #bodyContent,
+body.page-首页草稿 #wiki-outer-body.huiji-css-hook #bodyContent {
+  background: transparent;
+}
+
+/*小于556的屏幕移除一些边距，优化显示*/
+
+@media(max-width:556px) {
+  #wiki-outer-body.huiji-css-hook .wiki-body-section {
+    padding: 0;
+  }
+}
+
+.huiji-css-hook #wiki-body {
+  background: transparent;
+  /*    max-width: 1156px;  */
+  /*限制内容区域宽度*/
+}
+
+/* 替换导航左侧站点名称为一张图片*/
+
+.subnav .nav-pills >:first-child {
+  background: transparent url("https://huiji-public.huijistatic.com/r6s/uploads/c/c3/Rainbowsix_logo_chs_nav.png") no-repeat scroll 50% 60%;
+  background-size: contain;
+}
+
+.logo-wiki-user {
+  opacity: 0;
+}
+
+/*使链接可以从中间换行*/
+
+a {
+  word-break: break-word;
+}
+
+/* 工具类 */
+
+.nobreak {
+  white-space: nowrap;
+}
+
+.plainlinks a:after {
+  content: "" !important;
+  display: none !important;
+}
+
+.flexfill:after {
+  /*使flex最后一行的元素自动对齐前几行元素*/
+  content: " ";
+  flex: auto;
+}
+
+.img-fit {
+  /*使图片在容器较小时自动缩放到容器宽度*/
+  max-width: 100%;
+  height: auto;
+}
+
+/*使图片宽度强制加大到容器宽度*/
+
+.img-fullwidth {
+  width: 100%;
+  height: auto;
+}
+
+/*使图片最大宽度不超过容器（img-responsive），且接受文本样式（如居中）*/
+
+.img-inline-responsive {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/*大标题*/
+
+#content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+#content #firstHeading h1 {
+  font-family: BebasNeue, "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-size: 4rem;
+}
+
+.huiji-h1-edit-button {
+  font-size: 2rem;
+  bottom: 0;
+}
+
+.mw-editsection-divider {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.2) !important;
+  height: 2rem !important;
+}
+
+#content #firstHeading {
+  border: none;
+}
+
+#content h2 {
+  font-size: 2rem;
+  color: #FFFFFF;
+}
+
+.ns-subject:not(.ns-2) #wiki-body h2 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  display: block;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+}
+
+#content h3 {
+  font-size: 1.7rem;
+  color: #FFFFFF;
+  font-weight: normal;
+}
+
+#content h4 {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  margin-top: 1rem;
+}
+
+/* wikitable和mw-datatable */
+
+.huiji-css-hook table.wikitable {
+  background-color: #222;
+  border: 1px solid #222;
+}
+
+.huiji-css-hook table.wikitable>tr>th,
+.huiji-css-hook table.wikitable>tr>td,
+.huiji-css-hook table.wikitable>*>tr>th,
+.huiji-css-hook table.wikitable>*>tr>td {
+  border: 1px solid #333;
+  padding: 4px;
+}
+
+.huiji-css-hook table.wikitable>tr>th,
+.huiji-css-hook table.wikitable>*>tr>th {
+  background-color: transparent;
+}
+
+.huiji-css-hook .mw-datatable {
+  color: #8eb1bc;
+  background: transparent
+}
+
+.huiji-css-hook .mw-datatable,
+.huiji-css-hook .mw-datatable td,
+.huiji-css-hook .mw-datatable th {
+  border: 1px solid #14324A;
+}
+
+.huiji-css-hook .mw-datatable th {
+  background-color: transparent
+}
+
+.huiji-css-hook .mw-datatable td {
+  background-color: transparent;
+  border: 1px solid #14324A;
+}
+
+.huiji-css-hook .mw-datatable tr:hover td {
+  background-color: transparent
+}
+
+/*只有水平边界线的表格（tbui-table）*/
+
+.tbui-table {
+  margin-bottom: 1.75rem;
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+.tbui-table>tbody>tr>th,
+.tbui-table>tbody>tr>td {
+  line-height: 1.75;
+  padding: 0.5em;
+}
+
+.tbui-table>tbody>tr>th {
+  border-top: 2px solid rgba(255, 255, 255, .2);
+  border-bottom: 2px solid rgba(255, 255, 255, .2);
+  color: #FFFFFF;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.tbui-table>tbody>tr>td {
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+/*仿游戏UI*/
+
+.notificationbar {
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid #ffffff;
+  padding: 12px;
+}
+
+.notificationbar-icon {
+  background: #3bafe8;
+  padding: 4px 16px;
+  border-radius: 16px;
+  margin-right: 16px;
+}
+
+.home-portal-l1,
+.home-portal-l2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.home-portal-notify {
+  padding: 6px;
+  color: #FFFFFF;
+}
+
+.home-portal-container {
+  flex: 1;
+  padding: 6px;
+  /* display: flex; */
+  align-items: center;
+}
+
+.home-portal-container .home-portal-btn {
+  background-color: rgba(0, 0, 0, 0.55);
+  border: 1px solid #3bafe8;
+  width: 100%;
+  height: 100%;
+  display: block;
+  height: 120px;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  font-size: 42px;
+  font-weight: bold;
+  justify-content: center;
+  color: #FFF;
+  letter-spacing: 2px;
+  transition: background-color 0.3s linear;
+}
+
+/* 武器ib的stk变化表 */
+
+div.weaponib-stk-info-card {
+  border-radius: 0.5rem;
+  padding-bottom: 4px;
+  background: #1A1B1D;
+  color: #fff;
+  display: inline-block;
+  border: #0D0F11 1px solid;
+}
+
+div.weaponib-stk-info-card table tr th,div.weaponib-stk-info-card table tr td {
+  padding:5px 10px;
+  text-align:center;
+  border: #1A1B1D 1px solid;
+}
+
+div.weaponib-stk-info-card table tr td{
+  background: #101112;
+  color: rgb(173 177 186);
+}
+
+.home-portal-container .home-portal-btn:hover {
+  background-color: #3bafe8;
+}
+
+.home-portal-btn {
+  background-repeat: no-repeat;
+  background-position: left middle;
+}
+
+.home-portal-menu {
+  width: 132px;
+  flex: none;
+}
+
+.home-portal-menu .home-portal-btn {
+  border-left-width: 8px;
+}
+
+.home-portal-operator .home-portal-btn {
+  background-image: url(https://huiji-public.huijistatic.com/r6s/uploads/a/a8/%E9%A6%96%E9%A1%B5%E6%8C%89%E9%92%AE-%E7%89%B9%E5%8B%A4%E5%B9%B2%E5%91%98.png);
+}
+
+.home-portal-gadget .home-portal-btn {
+  background-image: url(https://huiji-public.huijistatic.com/r6s/uploads/4/4f/%E9%A6%96%E9%A1%B5%E6%8C%89%E9%92%AE-%E6%AD%A6%E5%99%A8%E8%A3%85%E5%A4%87.png);
+}
+
+.home-portal-maps .home-portal-btn {
+  background-image: url(https://huiji-public.huijistatic.com/r6s/uploads/6/60/%E9%A6%96%E9%A1%B5%E6%8C%89%E9%92%AE-%E5%9C%B0%E5%9B%BE.png);
+}
+
+.home-portal-docs .home-portal-btn {
+  background-image: url(https://huiji-public.huijistatic.com/r6s/uploads/6/68/%E9%A6%96%E9%A1%B5%E6%8C%89%E9%92%AE-%E6%96%87%E6%A1%A3.png);
+}
+
+.home-portal-pvp .home-portal-btn {
+  background-image: url(https://huiji-public.huijistatic.com/r6s/uploads/d/da/%E9%A6%96%E9%A1%B5%E6%8C%89%E9%92%AE-%E7%94%B5%E7%AB%9E.png);
+}
+
+.home-portal-maps .home-portal-btn,
+.home-portal-docs .home-portal-btn,
+.home-portal-pvp .home-portal-btn {
+  background-size: 60px;
+  background-position: 30px center;
+  padding-left: 2em;
+}
+
+.home-portal-gadget .home-portal-btn {
+  background-size: contain;
+  background-position: -10px center;
+  padding-left: 1.5em;
+}
+
+.home-portal-operator .home-portal-btn {
+  background-size: contain;
+  background-position: -20px center;
+  padding-left: 2.5em;
+}
+
+/*20200223 首页布局改造 by summerset*/
+
+/*首页底部背景*/
+
+/*@media (max-width: 768px){*/
+
+.home-backgroundcard {
+  background-color: rgba(48, 48, 48, 0.5);
+  padding: 24px;
+}
+
+/*}*/
+
+@media (max-width: 767px) {
+  /*窄屏兼容*/
+
+  .home-portal-container {
+    width: auto;
+    flex: 1;
+  }
+
+  .home-portal-container .home-portal-btn {
+    font-size: 18px;
+    padding: 0;
+    background-size: auto 50px;
+    background-position: center 20px;
+    padding-top: 60px;
+    white-space:nowrap;
+  }
+
+  .home-portal-menu .home-portal-btn {
+    border-left-width: 1px;
+    padding-top: 0;
+    font-size: 42px;
+  }
+
+  .home-backgroundcard {
+    background-color: rgba(48, 48, 48, 0);
+    padding: 0px;
+  }
+
+  .homecard {
+    border: 1px solid rgb(48, 48, 48);
+  }
+}
+
+/*黑黄条通知区域*/
+
+.home-announcement-outer {
+  background: #000 url('https://huiji-public.huijistatic.com/r6s/uploads/9/94/Blackyellowstripe.jpg') repeat;
+  background-size: 48px;
+  padding: 12px;
+}
+
+.home-announcement-inner {
+  background: #141414;
+  overflow: hidden;
+  padding: 12px;
+}
+
+/*分栏+卡片*/
+
+.homegrid-container {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+}
+
+.homegrid-container.home-beta{
+  grid-template-columns: 8fr 4fr;
+}
+
+.homegrid-top {
+  grid-column: 1/3;
+  grid-row: 1/1;
+}
+
+.homegrid-left {
+  grid-row: 2/2;
+}
+
+.homegrid-right {
+  grid-row: 2/2;
+}
+
+@media (max-width: 767px) {
+  .homegrid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .homegrid-top {
+    grid-column: 1/2;
+    grid-row: 1/1
+  }
+
+  .homegrid-left {
+    grid-column: 1/2;
+    grid-row: 2/3
+  }
+
+  .homegrid-right {
+    grid-column: 1/2;
+    grid-row: 3/4
+  }
+}
+
+.homecard {
+  background-color: #141414;
+  margin-bottom: 18px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.homecard:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.homecard .card-title {
+  padding: 24px 24px 0px 24px;
+}
+
+.homecard .card-content {
+  padding: 10px 24px 24px 24px;
+}
+
+.homecard.homecard-type1 .card-title {
+  font-size: 32px;
+  color: #FFF;
+  line-height: 1.2;
+}
+
+.homecard.homecard-type2 {
+  padding: 12px;
+}
+
+.homecard.homecard-type2 .card-title {
+  font-size: 24px;
+  color: #FFF;
+  border: 1px solid #FFF;
+  white-space: nowrap;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.homecard.homecard-type2 .card-content {
+  padding: 12px 0;
+}
+
+/*每周挑战*/
+
+.weeklychallenge {
+  display: flex;
+  flex-direction: row;
+  margin: 8px 0;
+}
+
+.weeklychallenge .challenge-icon {
+  width: 56px;
+  padding: 6px;
+}
+
+.weeklychallenge .challenge-content {
+  flex: 1 1;
+  color: #FFF;
+  line-height: 1.4;
+}
+
+.weeklychallenge .challenge-title {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 6px;
+}
+
+.weeklychallenge .challenge-text {
+  color: #CCC;
+  padding-bottom: 6px;
+}
+
+.weeklychallenge .challenge-rewarditem {
+  padding-bottom: 6px;
+  flex:1;
+}
+
+.weeklychallenge .challenge-rewardbox {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2px 0;
+}
+
+.weeklychallenge .challenge-rewarditem img {
+  vertical-align: middle;
+}
+
+.challenge-group dt {
+  font-size: 24px;
+  color: #FFF;
+}
+
+.challenge-group dd {
+}
+
+.challenge-group dd .digit {
+  font-family: BebasNeue;
+  font-size: 24px;
+  padding: 4px;
+  color: #FFF;
+}
+
+.home-version {
+  display: grid;
+  grid-template-columns: 140px auto;
+  grid-gap: 12px;
+}
+
+@media (max-width: 767px) {
+  .home-version {
+    grid-template-columns: auto;
+    grid-auto-flow: row;
+  }
+}
+
+.home-version-item {
+  background: #0A0A0A;
+  border: 1px solid #272727;
+  padding: 6px 12px;
+}
+
+.home-version-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+/*典范词条样式*/
+
+.formalentry {
+  display: grid;
+  grid-template-columns: auto 120px;
+  grid-gap: 18px;
+}
+
+.formalentry.home-beta {
+  grid-template-columns: 120px auto ;
+}
+
+@media (max-width: 556px) {
+  /*窄屏下调整网格*/
+
+  .formalentry {
+    grid-template-columns:auto
+  }
+}
+
+.formalentry .formalentry-image {
+  justify-self:center;
+}
+
+.formalentry .formalentry-content {
+}
+
+/*地图列表样式*/
+
+.maplist-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 18px;
+}
+
+@media (max-width: 991px) {
+  .maplist-grid {
+    grid-template-columns: 1fr 1fr;
+    /*窄屏下显示两栏*/
+  }
+}
+
+.maplist-item {
+  position: relative;
+}
+
+.maplist-linkbox {
+}
+
+.maplist-linkbox>a {
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: flex-end;
+  color: #CCC !important;
+  font-size: 18px;
+  text-shadow: 0 0 5px #000;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #7c7d7f;
+  transition: border-color 0.1s, color 0.1s, background-color 0.1s;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.maplist-linkbox>a:hover {
+  background: transparent;
+  border-color: #FFBB00;
+  color: #FFF !important;
+}
+
+/*适用于横长条图的兼容  by summerset 20210317*/
+
+.maplist-imagebox {
+  height: 100%;
+}
+
+.maplist-imagebox img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/*mbox*/
+
+.mbox-inner {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 12px;
+}
+
+/*code和pre*/
+
+/*原始样式修正*/
+
+code {
+  color: #8dff72;
+  background: #000000;
+}
+
+.huiji-css-hook pre {
+  white-space: pre-wrap;
+}
+
+.huiji-css-hook code {
+  background-color: #111111;
+  color: #d3fd24;
+  font-weight: normal;
+}
+
+.huiji-css-hook .prettyprint {
+  background-color: #111111;
+  border: none;
+}
+
+.huiji-css-hook .prettyprint .com {
+  color: #5cb85c;
+}
+
+.huiji-css-hook .prettyprint .lit {
+  color: #2e92da;
+}
+
+.huiji-css-hook .prettyprint .pun,
+.huiji-css-hook .prettyprint .opn,
+.huiji-css-hook .prettyprint .clo {
+  color: #999;
+}
+
+.huiji-css-hook .prettyprint .fun {
+  color: #dc322f;
+}
+
+.huiji-css-hook .prettyprint .str,
+.huiji-css-hook .prettyprint .atv {
+  color: #D14;
+}
+
+.huiji-css-hook .prettyprint .kwd,
+.huiji-css-hook .prettyprint .linenums .tag {
+  color: #7a57c9;
+}
+
+.huiji-css-hook .prettyprint .typ,
+.huiji-css-hook .prettyprint .atn,
+.huiji-css-hook .prettyprint .dec,
+.huiji-css-hook .prettyprint .var {
+  color: teal;
+}
+
+.huiji-css-hook .prettyprint .pln {
+  color: #ffffff;
+}
+
+.huiji-css-hook .prettyprint.linenums {
+  box-shadow: inset 40px 0 0 #000000, inset 41px 0 0 #222222;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+
+.huiji-css-hook .prettyprint ol.linenums {
+}
+
+.huiji-css-hook .prettyprint ol.linenums li {
+  padding-left: 12px;
+  color: #bebec5;
+  line-height: 18px;
+  text-shadow: none;
+}
+
+.r6mbox {
+  overflow: auto;
+  margin: 0.5em auto;
+  border-left: 10px solid transparent;
+  background-color: #202020;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+}
+
+.r6mbox-icon {
+  display: flex;
+  align-items: center;
+}
+
+.r6mbox-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFF;
+  margin-bottom: 10px;
+}
+
+.r6mbox-icon,
+.r6mbox-content {
+  padding: 16px;
+}
+
+.r6mbox-content {
+  flex: 1 1;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.r6mbox-primary {
+  border-left-color: #ffc800;
+}
+
+.r6mbox-success {
+  border-left-color: #5cb85c;
+}
+
+.r6mbox-info {
+  border-left-color: #3498db;
+}
+
+.r6mbox-warning {
+  border-left-color: #f35612;
+}
+
+.r6mbox-danger {
+  border-left-color: #c0392b;
+}
+
+.r6mbox-icon img {
+  vertical-align: top;
+}
+
+.contour-of-height-comparison {
+  background: #454545 url('https://huiji-public.huijistatic.com/r6s/uploads/6/67/Height_line_401.png') bottom
+}
+
+.battle-pass {
+  background: #454545 url('https://huiji-public.huijistatic.com/r6s/uploads/2/23/Road_to_si_2021.jpg') no-repeat right center;
+  background-size:cover;
+}
+
+.mapqueue-plus {
+  background-color:#9ac725;
+  padding:3px;
+  color:white;
+  border-radius:3px;
+}
+
+.mapqueue-minus {
+  background-color:#ff4a05;
+  padding:3px;
+  color:white;
+  border-radius:3px;
+}
+
+.mwe-popups, .mwe-popups-container {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.nav-header {
+  margin-top: 10px;
+  background-color: #141414;
+  color: #3bafe8;
+  padding: 3px 7px;
+}
+
+.home-version-badge-chstext{
+  letter-spacing: 8px;
+}
+
+.skin-quality-box{
+  display: inline-grid;
+  grid-template-columns: 28px 24px auto;
+  overflow: hidden;
+  position: relative;
+  margin: 0 3px;
+  line-height:1.5;
+}
+
+.skin-quality-icon{
+  display: inline-block;
+  padding-left: 0.3em;
+}
+
+.skin-quality-triangle{
+  border: 0 solid transparent;
+  border-width: 0 0 1.5em 1.5em;
+  height: 100%;
+}
+
+.skin-quality-text{
+  height: 100%;
+  padding-right: 0.6em;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.richtab-map{
+  display:inline-flex;
+}
+
+.nav-map{
+  display:inline-grid;
+}
+
+.colorless{
+  filter: grayscale(100%);
+}
+
+img.operatorname-badge{
+  vertical-align:-6px;
+  width: 25px;
+  aspect-ratio: auto 25 / 25;
+  height: 25px;
+}
+
+span.operatorname-badge{
+  vertical-align: -5px;
+  width: 24px;
+  height: 24px;
+  background-image: url(//huiji-public.huijistatic.com/r6s/uploads/e/e1/Operator_badge_black_border_96px.png);
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  display: inline-block;
+  background-size: auto 24px;
+}
+
+@media (max-width: 769px) {
+  .editnotice-i	{
+    display:none;
+  }
+
+  .home-version-badge {
+    font-family: ScoutCondRegular;
+    line-height: 1.5em;
+    margin: auto;
+  }
+
+  .home-version-badge-badge{
+    display: inline-block;
+    margin: auto;
+    vertical-align: 1.5em;
+  }
+
+  .home-version-badge-text{
+    display: inline-block;
+    padding-left: 1em;
+  }
+
+  .home-version-badge img{
+    width:40px;
+    height:auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .editnotice-t	{
+    display:none;
+  }
+
+  .home-version-badge {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: 15px;
+    text-align: center;
+    font-family: ScoutCondRegular;
+    line-height: 1.5em;
+  }
+
+  .home-version-badge-chstext{
+    padding-left: 8px;
+  }
+
+  .home-version-badge-badge{
+    margin: 20px 20px 0px;
+  }
+}
+
+.hover\:w-32:hover{
+  width:8rem;
+}
+
+.hover\:bg-\[\#3bafe8\]:hover{
+  --tw-bg-opacity:1;
+  background-color:rgb(59 175 232 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 640px){
+  .sm\:col-span-1{
+    grid-column:span 1 / span 1;
+  }
+
+  .sm\:col-span-4{
+    grid-column:span 4 / span 4;
+  }
+
+  .sm\:row-span-4{
+    grid-row:span 4 / span 4;
+  }
+
+  .sm\:row-span-3{
+    grid-row:span 3 / span 3;
+  }
+
+  .sm\:grid{
+    display:grid;
+  }
+
+  .sm\:hidden{
+    display:none;
+  }
+
+  .sm\:h-96{
+    height:24rem;
+  }
+
+  .sm\:grid-cols-2{
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:p-6{
+    padding:1.5rem;
+  }
+
+  .sm\:text-2xl{
+    font-size:1.5rem;
+    line-height:2rem;
+  }
+}
