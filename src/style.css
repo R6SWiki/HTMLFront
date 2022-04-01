@@ -39,10 +39,6 @@ video {
 } */
 
 
-/* html{
-    font-size: 10px;
-} */
-
 /* 愚人节彩蛋 */
 div.formalentry-content.yurenjie span a.external.text:hover::after{
     content:"（你被骗了！）"
