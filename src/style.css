@@ -13,10 +13,76 @@ ContentFormat=#text/css#
 
 
 /* @tailwind base; */
-@tailwind components;
+/* @tailwind components; */
 @tailwind utilities;
 
+
+/* @layer base{
+    a{
+        @apply text-primary;
+    }
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display:inline-block;
+}
+img,
+video {
+  max-width: inherit;
+  height: inherit;
+}
+} */
+
+
+html{
+    font-size: 10px;
+}
+
+/* 愚人节彩蛋 */
+div.formalentry-content.yurenjie span a.external.text:hover::after{
+    content:"（你被骗了！）"
+  }
+  
+  div.formalentry-content.yurenjie p+a.external.text:hover::after{
+    content:"（其实是看视频）"
+  }
+  
+  div.formalentry-content.yurenjie a.external.text::after{
+    content:none;
+  }
+
+
+/* 特勤干员首页效果 */
+  div.operators-table div.operators-cell span.cordname{
+      @apply bg-[#c3c3c3] block py-2 text-center text-4xl uppercase italic;
+    }
+    
+    div.operators-table div.operators-cell:hover span.cordname{
+        @apply  bg-[#00ffe5] font-bold;
+    }
+
+
+div.operators-table div.operators-cell{
+    @apply  flex flex-col ease-in duration-200 bg-white/[.15]  text-[#24262a] m-1;
+    width:calc(12.5% - 10px);
+}
+
+div.operators-table div.operators-cell:hover{
+    @apply shadow-lg transition-colors transition-transform shadow-bordercolor z-10 bg-[#2499ff];
+    transform: scale(1.15);
+}
+
+
+
+
+
 /*武器info*/
+
 div.infobox-gun{
 @apply border-solid border border-bordercolor bg-bgcolor;
 }
@@ -218,23 +284,122 @@ body.page-首页 div.pollembed-wrap div.poll-wrap div.progress{
     
 }
 
+
+
+/* 引入彩虹六号软件界面英文字体 */
 @font-face {
-    font-family: ScoutCondRegular;
-    src: url('https://huiji-public.huijistatic.com/r6s/uploads/d/d8/ScoutCond-Regular.ttf');
+    font-family: ScoutCond;
+    src: url('https://huiji-public.huijistatic.com/r6s/uploads/4/40/ScoutCond-Thin.ttf');
+    font-weight: 100;
+    font-weight: thin;
+    font-style: normal;
 }
 
+@font-face {
+    font-family: ScoutCond;
+    src: url('https://huiji-public.huijistatic.com/r6s/uploads/d/da/ScoutCond-ThinItalic.ttf');
+    font-weight: 100;
+    font-weight: thin;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: ScoutCond;
+    src: url('https://huiji-public.huijistatic.com/r6s/uploads/a/af/ScoutCond-ExtraLight.ttf');
+    font-weight: 200;
+    font-weight: extra-light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ScoutCond;
+    src: url('https://huiji-public.huijistatic.com/r6s/uploads/4/4b/ScoutCond-ExtraLightItal.ttf');
+    font-weight: 200;
+    font-weight: extra-light;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: ScoutCond;
+    src: url('https://huiji-public.huijistatic.com/r6s/uploads/5/5a/ScoutCond-Light.ttf');
+    font-weight: 300;
+    font-weight: light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ScoutCond;
+    src: url('https://huiji-public.huijistatic.com/r6s/uploads/7/7c/ScoutCond-LightItalic.ttf');
+    font-weight: 300;
+    font-weight: light;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: ScoutCond;
+    src: url('https://huiji-public.huijistatic.com/r6s/uploads/d/d8/ScoutCond-Regular.ttf');
+    font-weight: 400;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ScoutCond;
+    src: url('https://huiji-public.huijistatic.com/r6s/uploads/c/c1/ScoutCond-RegularItalic.ttf');
+    font-weight: 400;
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
+
+@font-face {
+    font-family: ScoutCond;
+    src: url('https://huiji-public.huijistatic.com/r6s/uploads/a/aa/ScoutCond-Bold.ttf');
+    font-weight: 700;
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ScoutCond;
+    src: url('https://huiji-public.huijistatic.com/r6s/uploads/1/14/ScoutCond-BoldItalic.ttf');
+    font-weight: 700;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: ScoutCond;
+    src: url('https://huiji-public.huijistatic.com/r6s/uploads/d/d0/ScoutCond-Black.ttf');
+    font-weight: 900;
+    font-weight: black;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: ScoutCond;
+    src: url('https://huiji-public.huijistatic.com/r6s/uploads/9/97/ScoutCond-BlackItalic.ttf');
+    font-weight: 900;
+    font-weight: black;
+    font-style: italic;
+}
+
+
+
 .scoutcond {
-	font-family: ScoutCondRegular, "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+	font-family: ScoutCond, "PingFang SC", "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
 }
 
 .bebas {
-    font-family: BebasNeue, "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    font-family: BebasNeue, "PingFang SC", "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
 }
 
 /*基准字体*/
 body:not(.ns--1) #wiki-body {
     font-size: 16px;
-    font-family: "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    font-family: "PingFang SC", "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
 }
 
 table.mw-jsonconfig{
@@ -361,8 +526,9 @@ a {
 }
 
 #content #firstHeading h1 {
-    font-family: BebasNeue, "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    font-family: ScoutCond,"PingFang SC", "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
     font-size: 4rem;
+    text-transform : uppercase ;
 }
 
 .huiji-h1-edit-button {
@@ -812,7 +978,7 @@ div.weaponib-stk-info-card table tr td{
 .challenge-group dd {}
 
 .challenge-group dd .digit {
-    font-family: BebasNeue;
+    font-family: ScoutCond;
     font-size: 24px;
     padding: 4px;
     color: #FFF;
@@ -1181,7 +1347,7 @@ span.operatorname-badge{
 	}
 	
 	.home-version-badge {
-font-family: ScoutCondRegular;
+font-family: ScoutCond;
 line-height: 1.5em;
 margin: auto;
 }
@@ -1223,7 +1389,7 @@ vertical-align: 1.5em;
 	align-content: center;
 	margin: 15px;
 	text-align: center;
-	font-family: ScoutCondRegular;
+	font-family: ScoutCond;
 	line-height: 1.5em;
 }
 

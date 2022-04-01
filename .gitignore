@@ -1,0 +1,6 @@
+src/.DS_Store
+R6swikiWS.code-workspace
+.gitignore
+.DS_Store
+src/pages
+dist/common.css
