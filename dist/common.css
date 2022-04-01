@@ -338,11 +338,32 @@ ContentFormat=#text/css#
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* 愚人节彩蛋 */
+/* @layer base{
+    a{
+        @apply text-primary;
+    }
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display:inline-block;
+}
+img,
+video {
+  max-width: inherit;
+  height: inherit;
+}
+} */
 
 html{
   font-size: 10px;
 }
+
+/* 愚人节彩蛋 */
 
 div.formalentry-content.yurenjie span a.external.text:hover::after{
   content:"（你被骗了！）"

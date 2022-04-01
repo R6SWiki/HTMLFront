@@ -7,6 +7,12 @@ module.exports = {
     })
     },
     colors: {
+      primary: '#ffc800',
+      success:'#5cb85c',
+      info:'#3498db',
+      warning:'#f35612',
+      danger:'#c0392b',
+      default:'#cccccc',
       y1s1color:"#367799",
       y1s2color:"#BB9331",
       y1s3color:"#5A8846",
