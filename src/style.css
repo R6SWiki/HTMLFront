@@ -40,8 +40,10 @@ video {
 
 @layer utilities{
     .scale-115{
-
         transform: scale(1.15);
+    }
+    .scale-105{
+        transform: scale(1.05);
     }
 }
 
@@ -75,13 +77,17 @@ body.page-特勤干员 section.body{
     }
     
     div.operators-table div.operators-cell:hover span.cordname{
-        @apply  md:bg-cyan duration-300 font-bold shadow-xl ;
+        @apply  bg-cyan duration-300 font-bold shadow-xl ;
     
     }
 div.operators-table div.operators-cell{
-    @apply relative flex flex-col ease-in-out transition-all hover:shadow-lg z-10 hover:md:scale-115 duration-300 bg-white/[.15]  text-[#24262a] m-2 w-[calc(25%_-_10px)] md:w-[calc(16.6%_-_10px)] lg:w-[calc(12.5%_-_10px)] lg:w-[calc(w1/12-10px)] hover:bg-[#2499ff] hover:shadow-black;
-    /* width:calc(12.5% - 10px); */
+    @apply relative flex flex-col ease-in-out transition-all hover:shadow-lg hover:z-10 hover:md:scale-115 duration-200 bg-white/[.15]  text-[#24262a] m-2 w-[calc(25%_-_10px)] md:w-[calc(16.6%_-_10px)] lg:w-[calc(12.5%_-_10px)] lg:w-[calc(w1/12-10px)] hover:bg-[#2499ff] hover:shadow-black 
 }
+
+div.operators-table div.operators-cell:active{
+    @apply transition-none border-white border-solid border-2 scale-105;
+}
+
 div.operators-table div.operators-cell a:nth-child(2){
     @apply absolute left-1/4 w-1/2 h-auto right-auto top-[50%];
 
