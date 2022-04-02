@@ -4,8 +4,7 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
         'diagonal': "url('data:image/svg+xml;%20charset=utf8,%3Csvg%20preserveAspectRatio=%22none%20meet%22%20width=%22100%25%22%20height=%22100%25%22%20viewBox=%220%200%201%201%22%20version=%221.1%22%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20xml:space=%22preserve%22%20xmlns:serif=%22http://www.serif.com/%22%20style=%22fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;%22%3E%0A%20%20%20%20%3Cg%20transform=%22matrix(0.00166667,0,0,0.00166667,0,0)%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d=%22M600,600L0,0L0,600L600,600Z%22%20style=%22fill:rgb(38,40,45);%22/%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E%0A')",
-    })
-    },
+    }),
     colors: {
       black:'#000000',
       primary: '#ffc800',
@@ -49,6 +48,7 @@ module.exports = {
       richtabnck:"#383838",
       primary:"#ffc800",
       deepgray:"#1f2937",
+    }
     },
   },
   plugins: []
