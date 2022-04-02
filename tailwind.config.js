@@ -7,7 +7,9 @@ module.exports = {
     })
     },
     colors: {
+      black:'#000000',
       primary: '#ffc800',
+      cyan:'#00ffe5',
       success:'#5cb85c',
       info:'#3498db',
       warning:'#f35612',
