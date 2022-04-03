@@ -784,13 +784,13 @@ div.weaponib-stk-info-card table tr td{
     background-image: url(https://huiji-public.huijistatic.com/r6s/uploads/6/68/%E9%A6%96%E9%A1%B5%E6%8C%89%E9%92%AE-%E6%96%87%E6%A1%A3.png);
 }
 
-.home-portal-pvp .home-portal-btn {
-    background-image: url(https://huiji-public.huijistatic.com/r6s/uploads/d/da/%E9%A6%96%E9%A1%B5%E6%8C%89%E9%92%AE-%E7%94%B5%E7%AB%9E.png);
-}
+.home-portal-mode .home-portal-btn {
+    background-image: url(https://huiji-public.huijistatic.com/r6s/uploads/f/f2/Arcade_Icon_Temp.svg);
+  }
 
 .home-portal-maps .home-portal-btn,
 .home-portal-docs .home-portal-btn,
-.home-portal-pvp .home-portal-btn {
+.home-portal-mode .home-portal-btn {
     background-size: 60px;
     background-position: 30px center;
     padding-left: 2em;
