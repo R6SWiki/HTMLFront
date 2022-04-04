@@ -29,12 +29,12 @@ audio,
 iframe,
 embed,
 object {
-  display:inline-block;
+display:inline-block;
 }
 img,
 video {
-  max-width: inherit;
-  height: inherit;
+max-width: inherit;
+height: inherit;
 }
 } */
 
@@ -57,61 +57,82 @@ html{
 /* 2022愚人节彩蛋 */
 div.formalentry-content.yurenjie span a.external.text:hover::after{
     content:"（你被骗了！）"
-  }
-  
-  div.formalentry-content.yurenjie p+a.external.text:hover::after{
+}
+
+div.formalentry-content.yurenjie p+a.external.text:hover::after{
     content:"（其实是看视频）"
-  }
-  
-  div.formalentry-content.yurenjie a.external.text::after{
+}
+
+div.formalentry-content.yurenjie a.external.text::after{
     content:none;
-  }
+}
 
 
-/* 特勤干员首页效果 */
-body.page-特勤干员 section.body{
+/* 特勤干员和地图页面cell的共用效果 */
+
+body.page-特勤干员 section.body,body.page-游戏模式 section.body,body.page-地图 section.body{
     @apply !bg-transparent
 }
-  div.operators-table div.operators-cell span.cordname{
-      @apply bg-default block py-2 text-center text-4xl uppercase italic h-[20%];
-    }
-    
-    div.operators-table div.operators-cell:hover span.cordname{
-        @apply  bg-cyan duration-300 font-bold shadow-xl ;
-    
-    }
-div.operators-table div.operators-cell{
-    @apply relative flex flex-col ease-in-out transition-all hover:shadow-lg hover:z-10 hover:md:scale-115 duration-200 bg-white/[.15]  text-[#24262a] m-2 w-[calc(25%_-_10px)] md:w-[calc(16.6%_-_10px)] lg:w-[calc(12.5%_-_10px)] lg:w-[calc(w1/12-10px)] hover:bg-[#2499ff] hover:shadow-black 
+
+div.partition-home-table-cell span.name{
+    @apply bg-default block text-center h-1/6 md:h-1/5;
 }
 
-div.operators-table div.operators-cell:active{
+div.partition-home-table-cell:hover span.name{
+    @apply  bg-cyan duration-300 font-bold ;
+}
+
+div.partition-home-table-cell{
+    @apply ease-in-out transition-all hover:shadow-lg hover:z-10 hover:md:scale-115 duration-300 bg-white/[.15]  text-[#24262a] m-2  hover:shadow-black 
+}
+
+div.partition-home-table-cell:active{
     @apply transition-none border-white border-solid border-2 scale-105;
 }
 
-div.operators-table div.operators-cell a:nth-child(2){
-    @apply absolute left-1/4 w-1/2 h-auto right-auto top-[50%];
 
+/* 特勤干员首页效果 */
+div.operators-homepage-table div.partition-home-table-cell span.name{
+    @apply uppercase italic text-3xl md:text-4xl py-1 md:py-2;
 }
-div.operators-table div.operators-cell:hover a:nth-child(2){
+
+div.operators-homepage-table div.partition-home-table-cell{
+    @apply relative flex flex-col justify-start w-[calc(25%_-_10px)] md:w-[calc(16.6%_-_10px)] lg:w-[calc(12.5%_-_10px)] lg:w-[calc(w1/12-10px)] hover:bg-[#2499ff]
+}
+
+div.operators-homepage-table div.partition-home-table-cell a:nth-child(2){
+    @apply absolute left-1/4 w-1/2 h-auto right-auto top-[50%];
+}
+div.operators-homepage-table div.partition-home-table-cell:hover a:nth-child(2){
     @apply  transition-opacity duration-300 ease-out md:opacity-0;
 }
 
-div.operators-table div.operators-cell:hover p{
+div.operators-homepage-table div.partition-home-table-cell:hover p{
     @apply md:opacity-100
 }
-div.operators-table img.camp-icon{
+div.operators-homepage-table img.camp-icon{
     vertical-align: -1px;
 }
-div.operators-table div.operators-cell p{
+div.operators-homepage-table div.partition-home-table-cell p{
     @apply absolute align-bottom text-default h-[40%] w-full 
     bottom-[25%] md:bottom-[20%] xl:bottom-[15%] 
-     text-lg md:text-xl lg:text-2xl
-      pl-2 pb-2 
-     transition-opacity opacity-0 pointer-events-none;
+    text-lg md:text-xl lg:text-2xl
+    pl-2 pb-2 
+    transition-opacity opacity-0 pointer-events-none;
     filter: drop-shadow(0px 0px 4px black) drop-shadow(0px 0px 4px black);
 }
-div.operators-table div.operators-cell p span{
+div.operators-homepage-table div.partition-home-table-cell p span{
     @apply block text-base md:text-lg lg:text-xl;
+}
+
+
+/* 地图和模式展示首页 */
+div.mapmode-homepage-table div.partition-home-table-cell{
+    @apply w-[calc(50%_-_10px)] md:w-1/3 lg:[calc(w-1/4_-_10px)]
+}
+
+div.mapmode-homepage-table div.partition-home-table-cell span.name{
+    @apply text-xl md:text-2xl py-2 md:py-3 ;
 }
 
 
