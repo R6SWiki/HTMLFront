@@ -128,7 +128,7 @@ div.operators-homepage-table div.partition-home-table-cell p span{
 
 /* 地图和模式展示首页 */
 div.mapmode-homepage-table div.partition-home-table-cell{
-    @apply w-[calc(50%_-_10px)] md:w-1/3 lg:[calc(w-1/4_-_10px)]
+    @apply w-[calc(50%_-_10px)] md:w-1/3
 }
 
 div.mapmode-homepage-table div.partition-home-table-cell span.name{

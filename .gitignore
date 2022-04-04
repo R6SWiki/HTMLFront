@@ -4,3 +4,5 @@ R6swikiWS.code-workspace
 .DS_Store
 src/pages
 dist/common.css
+node_modules/
+package-lock.json
