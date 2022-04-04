@@ -68,7 +68,11 @@ div.formalentry-content.yurenjie a.external.text::after{
 }
 
 
-/* 特勤干员和地图页面cell的共用效果 */
+/* 特勤干员和地图页面的共用效果 */
+/* div.operators-homepage-table a{
+    @apply text-[#24262a]
+} */
+
 
 body.page-特勤干员 section.body,body.page-游戏模式 section.body,body.page-地图 section.body{
     @apply !bg-transparent
@@ -79,7 +83,7 @@ div.partition-home-table-cell span.name{
 }
 
 div.partition-home-table-cell:hover span.name{
-    @apply  bg-cyan duration-300 font-bold ;
+    @apply transition-none bg-cyan font-bold ;
 }
 
 div.partition-home-table-cell{
@@ -91,13 +95,14 @@ div.partition-home-table-cell:active{
 }
 
 
+
 /* 特勤干员首页效果 */
 div.operators-homepage-table div.partition-home-table-cell span.name{
     @apply uppercase italic text-3xl md:text-4xl py-1 md:py-2;
 }
 
 div.operators-homepage-table div.partition-home-table-cell{
-    @apply relative flex flex-col justify-start w-[calc(25%_-_10px)] md:w-[calc(16.6%_-_10px)] lg:w-[calc(12.5%_-_10px)] lg:w-[calc(w1/12-10px)] hover:bg-[#2499ff]
+    @apply relative flex flex-col justify-start w-[calc(25%_-_10px)] md:w-[calc(16.6%_-_10px)] lg:w-[calc(12.5%_-_10px)] xl:w-[calc(w8.3%-10px)] hover:bg-[#2499ff]
 }
 
 div.operators-homepage-table div.partition-home-table-cell a:nth-child(2){
@@ -127,12 +132,22 @@ div.operators-homepage-table div.partition-home-table-cell p span{
 
 
 /* 地图和模式展示首页 */
+
+
 div.mapmode-homepage-table div.partition-home-table-cell{
-    @apply w-[calc(50%_-_10px)] md:w-1/3
+    @apply w-[calc(33%_-_10px)] md:w-[calc(25%_-_10px)]
 }
 
 div.mapmode-homepage-table div.partition-home-table-cell span.name{
-    @apply text-xl md:text-2xl py-2 md:py-3 ;
+    @apply text-xl text-center  md:text-2xl py-1 md:py-2;
+}
+
+div.mapmode-homepage-table div.partition-home-table-cell div.map-pic{
+    @apply h-5/6 md:h-4/5;
+}
+
+div.mapmode-homepage-table div.partition-home-table-cell div.map-pic img{
+    @apply h-full w-full object-cover object-center;
 }
 
 
