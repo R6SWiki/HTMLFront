@@ -78,20 +78,24 @@ body.page-特勤干员 section.body,body.page-游戏模式 section.body,body.pag
     @apply !bg-transparent
 }
 
-div.partition-home-table-cell span.name{
-    @apply bg-default block text-center h-1/6 md:h-1/5;
+div.partition-home-table-cell div.name{
+    @apply bg-default flex justify-center items-center h-1/5;
 }
 
-div.partition-home-table-cell span.name a{
-    @apply text-[#24262a];
+div.partition-home-table-cell:hover div.name{
+    @apply transition-none bg-UbiCyan;
 }
 
-div.partition-home-table-cell:hover span.name{
-    @apply transition-none bg-cyan font-bold ;
+div.partition-home-table-cell div.name span a{
+    @apply text-UbiTextBlack;
+}
+
+div.partition-home-table-cell:hover div.name span{
+    @apply font-bold 
 }
 
 div.partition-home-table-cell{
-    @apply ease-in-out transition-all hover:shadow-lg hover:z-10 hover:md:scale-115 duration-300 bg-white/[.15]  text-[#24262a] m-2  hover:shadow-black 
+    @apply ease-in-out transition-all hover:shadow-lg hover:z-10 hover:md:scale-115 duration-300 bg-white/[.15]  text-UbiTextBlack m-2  hover:shadow-black 
 }
 
 div.partition-home-table-cell:active{
@@ -101,12 +105,42 @@ div.partition-home-table-cell:active{
 
 
 /* 特勤干员首页效果 */
-div.operators-homepage-table div.partition-home-table-cell span.name{
-    @apply uppercase italic text-3xl md:text-4xl py-1 md:py-2;
+div.oprator-homepage-cquote{
+    @apply hidden md:block
+}
+
+div.operators-homepage-table label{
+    @apply w-[calc(50%_-_10px)] md:w-96 m-2 md:m-4
+}
+
+div.operators-homepage-table label div{
+    @apply bg-UbiBgBlue flex justify-center items-center flex-row text-UbiTextBlack 
+    h-28 w-full
+    ease-in-out transition-all duration-300 
+    hover:bg-gradient-to-t hover:from-[#12C4F2] border-y-4 border-0 border-y-UbiBgBlue hover:border-b-UbiCyan border-solid text-4xl hover:text-5xl
+}
+#attacker:checked ~ div.display-camp-selector label[for="attacker"] div,#defender:checked ~ div.display-camp-selector label[for="defender"] div{
+    @apply bg-UbiCyan text-5xl border-t-UbiCyan border-b-UbiBgBlue
+}
+
+
+#attacker:checked:hover ~ div.display-camp-selector label[for="attacker"] div,#defender:checked:hover ~ div.display-camp-selector label[for="defender"] div{
+    @apply bg-UbiCyan text-5xl bg-gradient-to-t from-UbiCyan
+}
+
+
+#defender:checked ~ div.attacker,#attacker:checked ~ div.defender{
+    @apply hidden
+}
+
+
+
+div.operators-homepage-table div.partition-home-table-cell div.name span{
+    @apply uppercase italic text-3xl md:text-4xl;
 }
 
 div.operators-homepage-table div.partition-home-table-cell{
-    @apply relative flex flex-col justify-start w-[calc(25%_-_10px)] md:w-[calc(16.6%_-_10px)] lg:w-[calc(12.5%_-_10px)] xl:w-[calc(w8.3%-10px)] hover:bg-[#2499ff]
+    @apply relative flex flex-col justify-start w-[calc(25%_-_10px)] md:w-[calc(16.6%_-_10px)] lg:w-[calc(12.5%_-_10px)] xl:w-[calc(8.3%_-_10px)] hover:bg-UbiBgBlue
 }
 
 div.operators-homepage-table div.partition-home-table-cell a:nth-child(2){
@@ -124,9 +158,8 @@ div.operators-homepage-table img.camp-icon{
 }
 div.operators-homepage-table div.partition-home-table-cell p{
     @apply absolute align-bottom text-default h-[40%] w-full 
-    bottom-[25%] md:bottom-[20%] xl:bottom-[15%] 
+    bottom-[25%] lg:bottom-[20%] xl:bottom-[15%] 2xl:bottom-[10%] pl-2
     text-lg md:text-xl lg:text-2xl
-    pl-2 pb-2 
     transition-opacity opacity-0 pointer-events-none;
     filter: drop-shadow(0px 0px 4px black) drop-shadow(0px 0px 4px black);
 }
@@ -142,12 +175,12 @@ div.mapmode-homepage-table div.partition-home-table-cell{
     @apply w-[calc(33%_-_10px)] md:w-[calc(25%_-_10px)]
 }
 
-div.mapmode-homepage-table div.partition-home-table-cell span.name{
-    @apply text-xl text-center  md:text-2xl lg:text-3xl py-1 md:py-2 lg:pb-2 lg:pt-4;
+div.mapmode-homepage-table div.partition-home-table-cell div.name span{
+    @apply text-xl text-center text-base sm:text-2xl  md:text-2xl lg:text-3xl;
 }
 
 div.mapmode-homepage-table div.partition-home-table-cell div.map-pic{
-    @apply h-5/6 md:h-4/5;
+    @apply h-4/5;
 }
 
 div.mapmode-homepage-table div.partition-home-table-cell div.map-pic img{
