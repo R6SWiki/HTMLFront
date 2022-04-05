@@ -140,7 +140,8 @@ div.operators-homepage-table div.partition-home-table-cell div.name span{
 }
 
 div.operators-homepage-table div.partition-home-table-cell{
-    @apply relative flex flex-col justify-start w-[calc(25%_-_10px)] md:w-[calc(16.6%_-_10px)] lg:w-[calc(12.5%_-_10px)] xl:w-[calc(8.3%_-_10px)] hover:bg-UbiBgBlue
+    @apply relative flex flex-col justify-start w-[calc(25%_-_10px)] md:w-[calc(16.6%_-_10px)] lg:w-[calc(12.5%_-_10px)] hover:bg-UbiBgBlue
+    /* xl:w-[calc(8.3%_-_10px)] */
 }
 
 div.operators-homepage-table div.partition-home-table-cell a:nth-child(2){
