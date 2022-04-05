@@ -82,6 +82,10 @@ div.partition-home-table-cell span.name{
     @apply bg-default block text-center h-1/6 md:h-1/5;
 }
 
+div.partition-home-table-cell span.name a{
+    @apply text-[#24262a];
+}
+
 div.partition-home-table-cell:hover span.name{
     @apply transition-none bg-cyan font-bold ;
 }
@@ -139,7 +143,7 @@ div.mapmode-homepage-table div.partition-home-table-cell{
 }
 
 div.mapmode-homepage-table div.partition-home-table-cell span.name{
-    @apply text-xl text-center  md:text-2xl py-1 md:py-2;
+    @apply text-xl text-center  md:text-2xl lg:text-3xl py-1 md:py-2 lg:pb-2 lg:pt-4;
 }
 
 div.mapmode-homepage-table div.partition-home-table-cell div.map-pic{
