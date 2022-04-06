@@ -1346,6 +1346,13 @@ code {
 	background: #454545 url('https://huiji-public.huijistatic.com/r6s/uploads/6/67/Height_line_401.png') bottom
 }
 
+@media screen and (min-width: 320px) and (max-width: 566px){
+    #bodyContent td.contour-of-height-comparison img.contour-of-height-comparison-cell-pic{
+        max-width:none!important;
+    }
+}
+
+
 .battle-pass {
 	background: #454545 url('https://huiji-public.huijistatic.com/r6s/uploads/2/23/Road_to_si_2021.jpg') no-repeat right center;
 	background-size:cover;
