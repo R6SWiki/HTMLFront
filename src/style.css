@@ -366,7 +366,63 @@ body.page-首页 div.pollembed-wrap div.poll-wrap div.progress{
   background-color: #303030;
 }
 
+/* 默认wikitable表格样式 */
+.huiji-css-hook table.wikitable{
+    @apply border-solid border border-bordercolor bg-bgcolor;
+}
 
+/* .huiji-css-hook table.wikitable>tr{
+    @apply bg-transparent
+} */
+
+
+/* .huiji-css-hook table.wikitable th{
+    @apply  bg-tablecolor border-0 border-t-0
+} */
+.huiji-css-hook table.wikitable td{
+    @apply border border-x-0 border-t-0 border-solid py-3 border-b-bgcolor
+}
+
+.huiji-css-hook table.wikitable tr:first-child th{
+    @apply py-6 border-0
+}
+
+.huiji-css-hook table.wikitable>tr>th,
+.huiji-css-hook table.wikitable>*>tr>th{
+    @apply bg-tablecolor border-0 border-transparent
+} 
+
+
+.huiji-css-hook table.wikitable tr{
+    @apply bg-cellbg border-0
+}
+
+.huiji-css-hook table.wikitable tr:nth-child(even){
+    @apply bg-[#141519] border-0
+}
+
+
+
+
+/* wikitable和mw-datatable 备份 */
+ 
+/* .huiji-css-hook table.wikitable {
+    background-color: #222;
+    border: 1px solid #222;
+  }
+   
+  .huiji-css-hook table.wikitable>tr>th,
+  .huiji-css-hook table.wikitable>tr>td,
+  .huiji-css-hook table.wikitable>*>tr>th,
+  .huiji-css-hook table.wikitable>*>tr>td {
+    border: 1px solid #333;
+    padding: 4px;
+  }
+   
+  .huiji-css-hook table.wikitable>tr>th,
+  .huiji-css-hook table.wikitable>*>tr>th {
+    background-color: transparent;
+  } */
 
 /* 魔改重定向提示 */
 /* div.huiji-h1-edit-button#huiji-h1-edit-button div#contentSub{
@@ -679,24 +735,7 @@ a {
     margin-top: 1rem;
 }
 
-/* wikitable和mw-datatable */
-.huiji-css-hook table.wikitable {
-    background-color: #222;
-    border: 1px solid #222;
-}
 
-.huiji-css-hook table.wikitable>tr>th,
-.huiji-css-hook table.wikitable>tr>td,
-.huiji-css-hook table.wikitable>*>tr>th,
-.huiji-css-hook table.wikitable>*>tr>td {
-    border: 1px solid #333;
-    padding: 4px;
-}
-
-.huiji-css-hook table.wikitable>tr>th,
-.huiji-css-hook table.wikitable>*>tr>th {
-    background-color: transparent;
-}
 
 .huiji-css-hook .mw-datatable {
     color: #8eb1bc;
