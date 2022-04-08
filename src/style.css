@@ -394,11 +394,11 @@ body.page-首页 div.pollembed-wrap div.poll-wrap div.progress{
 
 
 .huiji-css-hook table.wikitable tr{
-    @apply bg-cellbg border-0
+    @apply bg-[#191b1d] border-0
 }
 
 .huiji-css-hook table.wikitable tr:nth-child(even){
-    @apply bg-[#141519] border-0
+    @apply bg-[#1c1f23] border-0
 }
 
 
