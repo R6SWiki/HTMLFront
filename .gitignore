@@ -6,3 +6,4 @@ src/pages
 dist/common.css
 node_modules/
 package-lock.json
+wikipages/
