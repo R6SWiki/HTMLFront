@@ -384,12 +384,12 @@ body.page-首页 div.pollembed-wrap div.poll-wrap div.progress{
 }
 
 .huiji-css-hook table.wikitable tr:first-child th{
-    @apply py-6 border-0
+    @apply py-4 border-0
 }
 
 .huiji-css-hook table.wikitable>tr>th,
 .huiji-css-hook table.wikitable>*>tr>th{
-    @apply bg-tablecolor border-0 border-transparent
+    @apply bg-[tablecolor] border-0 border-transparent
 } 
 
 
