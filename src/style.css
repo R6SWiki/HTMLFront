@@ -380,18 +380,21 @@ body.page-首页 div.pollembed-wrap div.poll-wrap div.progress{
     @apply  bg-tablecolor border-0 border-t-0
 } */
 .huiji-css-hook table.wikitable td{
-    @apply border border-x-0 border-t-0 border-solid py-3 border-b-bgcolor
+    @apply border-0 border-solid py-3 border-b-[1px] border-b-tablecolor
 }
 
 .huiji-css-hook table.wikitable tr:first-child th{
-    @apply py-4 border-0
+    @apply p-4 border-0 bg-tablecolor
 }
 
 .huiji-css-hook table.wikitable>tr>th,
 .huiji-css-hook table.wikitable>*>tr>th{
-    @apply bg-[tablecolor] border-0 border-transparent
+    @apply bg-tablecolor border-0 border-transparent
 } 
 
+.huiji-css-hook table.wikitable tr:nth-child(2) td{
+    @apply border-t-bordercolor border-t-[1px]
+}
 
 .huiji-css-hook table.wikitable tr{
     @apply bg-[#191b1d] border-0
@@ -400,6 +403,7 @@ body.page-首页 div.pollembed-wrap div.poll-wrap div.progress{
 .huiji-css-hook table.wikitable tr:nth-child(even){
     @apply bg-[#1c1f23] border-0
 }
+
 
 
 
