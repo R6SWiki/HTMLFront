@@ -1,0 +1,173 @@
+{
+	// Place your HTMLFront 工作区 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"技能名": {
+        "prefix": [" skill"],
+        "body": [
+            "{{技能|${1|sledge,smoke,thatcher,mute,ash,castle,thermite,pulse,twitch,doc,montagne,rook,glaz,kapkan,fuze,tachanka,blitz,jager,iq,bandit,buck,frost,blackbeard,valkyrie,capitao,caveira,hibana,echo,jackal,mira,ying,lesion,ela,zofia,dokkaebi,vigil,lion,finka,alibi,maestro,maverick,clash,nomad,kaid,gridlock,mozzie,nokk,warden,amaru,goyo,kali,wamai,iana,oryx,ace,melusi,zero,aruni,flores,thunderbird,osa,thorn,azami}}}$0"
+        ],
+        "description": "{{技能|干员代号}}"
+    },
+	"鼠标键": {
+        "prefix": [" mouse"],
+        "body": [
+            "{{key|${1|ml,mm,mr|}}}$0"
+        ],
+        "description": "鼠标按键名，比如：{{key|ml}}是鼠标左键，{{key|mm}}是鼠标中键，{{key|mr}}是鼠标右键"
+    },
+    "键盘键": {
+        "prefix": [" key"],
+        "body": [
+            "{{key|$1}}$0"
+        ],
+        "description": "按键名"
+    },
+	"干员名": {
+        "prefix": [" operatorCord"],
+        "body": [
+            "{{${1|sledge,smoke,thatcher,mute,ash,castle,thermite,pulse,twitch,doc,montagne,rook,glaz,kapkan,fuze,tachanka,blitz,jager,iq,bandit,buck,frost,blackbeard,valkyrie,capitao,caveira,hibana,echo,jackal,mira,ying,lesion,ela,zofia,dokkaebi,vigil,lion,finka,alibi,maestro,maverick,clash,nomad,kaid,gridlock,mozzie,nokk,warden,amaru,goyo,kali,wamai,iana,oryx,ace,melusi,zero,aruni,flores,thunderbird,osa,thorn,azami}}}$0"
+        ],
+        "description": "干员名模板"
+    },
+    "地图名": {
+        "prefix": [" map"],
+        "body": [
+            "${1|银行,边境,木屋,俱乐部,海岸线,领事馆,杜斯妥也夫斯基咖啡馆,运河,俄勒冈乡间屋宅,荒漠服务站,主题乐园,庄园,游艇,赫里福基地,巴特雷特大学,要塞,芝加哥豪宅,摩天大楼,高塔,总统专机,贫民窟|}"
+        ],
+        "description": "干员名模板"
+    },
+    "地图id": {
+        "prefix": [" mapid"],
+        "body": [
+            "${1|bank,border,chalet,clubhouse,coastline,consulate,kafe dostoyevsky,kanal,oregon,outback,themepark,villa,yacht,hereford base,bartlett u.,fortress,house,skyscraper,tower,presidential plane,favela|}"
+        ],
+        "description": "地图id"
+    },
+    "枪名": {
+        "prefix": [" wi"," wi"],
+        "body": [
+            "{{wi|${1|l85a2,ar33,556xi,g36c,r4c,f2,ak12,auga2,552commando,416ccarbine,c8sfw,mk17cqb,para308,type89,c7e,m762,v308,spear308,m4,arx200,ak74m,f90,commando9,sc3000k,pdw9,fmg9,mp5k,ump45,mp5,p90,9x19vsn,mp7,9mmc1,mpx,m12,mp5sd,vector45acp,t5smg,scorpionevo3a1,k1a,mx4storm,auga3,p10roni,6p41,dp27,g8a1,m249,t95lsw,lmge,alda556,m249saw,smg11,bearing9,c75auto,smg12,spsmg9,ots03,417,camrs,sr25,mk14ebr,ar1550,csrx300,acs12,bosg122,tcsg12,m590a1,m1014,sgcqb,sasg12,m870,super90,spas12,spas15,supernova,ita12l,six12,six12sd,fo12,p226mk25,m45meusoc,57usg,p9,lfp586,pmm,gsh18,p12,mk19mm,d50,prb92,luison,p229,usp40,q929,rg15,keratos357,1911tacops,p10c,44magsemiauto,sdp9mm,supershorty,ita12s,bailiff410,gonne6,uzk50gi|}}}$0"
+        ],
+        "description": "{{wi|枪名}}"
+    },    
+    "涂装品质": {
+        "prefix": [" quality"],
+        "body": [
+            "{{${1|普通,优良,稀有,史诗,传说|}|$2}}$0"
+        ],
+        "description": "{{涂装品质|皮肤名称}}"
+    },
+    "给你点颜色": {
+        "prefix": [" color"],
+        "body": [
+            "{{${1|红色,黄色,绿色,蓝色,桔色|}|$2}}$0"
+        ],
+        "description": "{{文本颜色|内容}}"
+    },
+    "引用": {
+        "prefix": [" ref"],
+        "body": [
+            "<ref>$1</ref>$0"
+        ],
+        "description": "<ref>引用内容</ref>"
+    },
+    "施工": {
+        "prefix": [" 正在施工"],
+        "body": [
+            "{{正在施工|$1——~~~~}}$0"
+        ],
+        "description": "{{正在施工|说明——~~~~}}"
+    },
+    "补丁页面": {
+        "prefix": [" infoboxPatch"],
+        "body": [
+            "{{Infobox patch",
+            "|补丁序号=$1",
+            "|y=$2",
+            "|s=$3",
+            "|n=$4",
+            "|配图=Y$2s$3.$4_update_patch_picture.png",
+            "|赛季=$5行动",
+            "|PC补丁=",
+            "* Ubisoft Connect：$6GB",
+            "* Steam：$7GB",
+            "|游戏机补丁=",
+            "* Xbox One：$8GB",
+            "* Xbox Series X：$9GB",
+            "* PS4：$10GB",
+            "* PS5：$11GB",
+            "|推送日期=$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+            "|翻译者=[$12 $13]",
+            "|来源=[$14 Ubisoft]",
+            "|wikia=Rainbow_Six_Siege_patches/Patch_$2.$3.$4",
+            "|内部版本号=v$2.$3.$4",
+            "}}",
+            "$0"
+        ],
+        "description": "补丁页面所使用的Infobox"
+    },
+    "干员改动": {
+        "prefix": [" operatorChangeItem"],
+        "body": [
+            "{{干员改动",
+            "|$1",
+            "|$2",
+            "}}"
+        ],
+        "description": "{{干员改动|干员名称|改动内容}}"
+    },
+    "机构周常": {
+        "prefix": [" 训练场每周挑战"],
+        "body": [
+            "{{Weeklychallenge/训练场|${1|SAS,FBI SWAT,GIGN,Spetsnaz,GSG 9,JTF-2,Navy SEALS,BOPE,SAT,GEO,SDU,GROM,707th SMB,CBRN,GIS,GIGR,SASR|}|$2}}",
+            "$0"
+        ],
+        "description": "机构周常：{{Weeklychallenge/训练场|机构名|胜利场次}}"
+    },
+    "多人机构周常": {
+        "prefix": [" 多人每周挑战"],
+        "body": [
+            "{{Weeklychallenge/多人|${1|SAS,FBI SWAT,GIGN,Spetsnaz,GSG 9,JTF-2,Navy SEALS,BOPE,SAT,GEO,SDU,GROM,707th SMB,CBRN,GIS,GIGR,SASR|}|$2}}",
+            "$0"
+        ],
+        "description": "机构周常：{{Weeklychallenge/多人|机构名|胜利场次}}"
+    },
+    "枪械大师周常": {
+        "prefix": [" 大师每周挑战"],
+        "body": [
+            "{{Weeklychallenge/${1|冲锋枪大师,竞技冲锋枪大师,步枪大师,竞技步枪大师,手枪大师,装备大师,竞技装备大师,霰弹枪大师,竞技霰弹枪大师|}|$2}}",
+            "$0"
+        ],
+        "description": "枪械大师周常：{{Weeklychallenge/武器大师（贾克斯（bushi））|击杀数}}"
+    },
+    "进攻方防守方挑战": {
+        "prefix": [" 进攻方每周挑战"," 防守方每周挑战"],
+        "body": [
+            "{{Weeklychallenge/${1|进攻方,防守方|}|$2}}",
+            "$0"
+        ],
+        "description": "机构周常：{{Weeklychallenge/进攻方或防守方|胜利场次}}"
+    },
+    "得分挑战": {
+        "prefix": [" 得分每周挑战"," MVP每周挑战"],
+        "body": [
+            "{{Weeklychallenge/${1|多人/MVP,训练场/团队玩家|}|$2}}",
+            "$0"
+        ],
+        "description": "机构周常：{{Weeklychallenge/多人或者训练场任务|得分要求}}"
+    },
+}
