@@ -15,6 +15,7 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+	
 	"技能名": {
         "prefix": [" skill"],
         "body": [
