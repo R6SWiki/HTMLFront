@@ -7,4 +7,4 @@ dist/common.css
 node_modules/
 package-lock.json
 wikipages/
-.vscode/wikitext.json.code-snippets
+.vscode/wikitext.code-snippets
