@@ -1130,8 +1130,8 @@ div.weaponib-stk-info-card table tr td{
 .challenge-group dd {}
 
 .challenge-group dd .digit {
-    font-family: ScoutCond;
-    font-size: 24px;
+    /* font-family: ScoutCond;
+    font-size:16px; */
     padding: 4px;
     color: #FFF;
 }
@@ -1200,6 +1200,19 @@ div.weaponib-stk-info-card table tr td{
         /*窄屏下显示两栏*/
     }
 }
+
+/* 倒计时胶囊 */
+span.countdown-capsule{
+    font-size: 0.5em;
+    text-align: right;
+    border: 1px white solid;
+    border-radius: 20px;
+    padding: 1px 8px 1px 6px;
+    vertical-align: 3px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
 
 .maplist-item {
     position: relative;
