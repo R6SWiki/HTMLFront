@@ -1034,9 +1034,14 @@ div.weaponib-stk-info-card table tr td{
 .homecard {
     background-color: #141414;
     margin-bottom: 18px;
-
     font-size: 14px;
     line-height: 1.8;
+    border: 1px transparent solid;
+}
+
+.homecard:hover{
+    border-color: #303030;
+    transition-duration: 300ms;
 }
 
 .homecard:after {
