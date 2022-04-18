@@ -1,9 +1,12 @@
 {
     "recommendations": [
+        "rowewilsonfrederiskholme.wikitext",
         "jeblad-3.wmfsnippets",
         "sumneko.lua",
         "github.copilot",
-        "rowewilsonfrederiskholme.wikitext",
-        "bradlc.vscode-tailwindcss"
+        "bradlc.vscode-tailwindcss",
+        "esbenp.prettier-vscode",
+        "ms-vsliveshare.vsliveshare",
+        "ritwickdey.LiveServer"
     ]
 }
