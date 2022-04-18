@@ -8,4 +8,4 @@ node_modules/
 package-lock.json
 wikipages/
 .vscode/R6swiki.code-snippets
-.prettier
+.prettierrc
