@@ -123,10 +123,10 @@ div.operators-homepage-table label div{
     @apply bg-UbiCyan text-5xl border-t-UbiCyan border-b-UbiBgBlue
 }
 
-
-#attacker:checked:hover ~ div.display-camp-selector label[for="attacker"] div,#defender:checked:hover ~ div.display-camp-selector label[for="defender"] div{
+/* 这是一个阵营选择器的反馈设定，如果再次点击一个checked的radio可以取消筛选的话，就停用这一段样式，反之则启用，以表达符合用户直觉的反馈 */
+/* #attacker:checked:hover ~ div.display-camp-selector label[for="attacker"] div,#defender:checked:hover ~ div.display-camp-selector label[for="defender"] div{
     @apply bg-UbiCyan text-5xl bg-gradient-to-t from-UbiCyan
-}
+} */
 
 
 #defender:checked ~ div.attacker,#attacker:checked ~ div.defender{
