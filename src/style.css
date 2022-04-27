@@ -105,6 +105,11 @@ div.partition-home-table-cell:active{
 
 
 /* 特勤干员首页效果 */
+.operatorPotraitSnowflake{
+    background-image: url('https://huiji-public.huijistatic.com/r6s/uploads/c/c8/Potrait_operator_snowflake.webp');
+    background-size: auto 500%;
+}
+
 div.oprator-homepage-cquote{
     @apply hidden md:block
 }
@@ -616,11 +621,18 @@ div.huiji-css-hook#wiki-outer-body{
 
 
 
-/* 干员页面的默认背景，以及标题、目录的文本投影效果。 */
+/* 干员首页的默认背景，以及标题、目录的文本投影效果。 */
 
 body.page-首页 #wiki-outer-body.huiji-css-hook #bodyContent,
 body.page-首页草稿 #wiki-outer-body.huiji-css-hook #bodyContent {
     background: transparent;
+}
+
+
+/* 解决页面问题的部分 */
+/* 功能选项页面的链接颜色问题 */
+body.page-特殊_管理面板 h4.list-group-item-heading{
+    color: #4167c5 !important;;
 }
 
 /*小于556的屏幕移除一些边距，优化显示*/
