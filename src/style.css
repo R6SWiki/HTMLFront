@@ -105,9 +105,14 @@ div.partition-home-table-cell:active{
 
 
 /* 特勤干员首页效果 */
-.operatorPotraitSnowflake{
+span.operatorPotraitSnowflake{
     background-image: url('https://huiji-public.huijistatic.com/r6s/uploads/c/c8/Potrait_operator_snowflake.webp');
     background-size: auto 500%;
+    width: 300px;
+    aspect-ratio: auto 300 / 500;
+    max-width: 100%;
+    height: auto;
+    @apply block 
 }
 
 div.oprator-homepage-cquote{
@@ -145,7 +150,7 @@ div.operators-homepage-table div.partition-home-table-cell div.name span{
 }
 
 div.operators-homepage-table div.partition-home-table-cell{
-    @apply relative flex flex-col justify-start w-[calc(25%_-_10px)] md:w-[calc(16.6%_-_10px)] lg:w-[calc(12.5%_-_10px)] hover:bg-UbiBgBlue
+    @apply relative flex flex-col justify-start w-[calc(25%_-_10px)] md:w-[calc(16.6%_-_10px)] lg:w-[calc(12.5%_-_10px)] hover:bg-UbiBgBlue select-none 
     /* xl:w-[calc(8.3%_-_10px)] */
 }
 
