@@ -863,12 +863,13 @@ a {
 /* 武器ib的stk变化表 */
 div.weaponib-stk-info-card {
   border-radius: 0.5rem;
-
+  overflow:auto;
   padding-bottom: 4px;
   background: #1A1B1D;
   color: #fff;
   display: inline-block;
   border: #0D0F11 1px solid;
+  /* box-shadow: 0 3px 4px rgba(0,0,0,0.3); */
 }
 div.weaponib-stk-info-card table tr th,div.weaponib-stk-info-card table tr td {
   padding:5px 10px;
