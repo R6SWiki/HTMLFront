@@ -613,6 +613,23 @@ body.page-首页草稿 #wiki-outer-body.huiji-css-hook {
     background: #090f15 url('https://huiji-public.huijistatic.com/r6s/uploads/f/f7/Y7S1-BG.png') no-repeat center 90px;
 }
 
+body.page-首页 section#bodyContent,
+body.page-首页草稿 section#bodyContent {
+    @apply !p-0 md:!p-6
+}
+
+body.page-首页 div.home-portal-maxwidth,
+body.page-首页草稿 div.home-portal-maxwidth {
+    @apply pt-6 px-6
+}
+
+
+/* 页脚图片效果 */
+img.Footer-game-logo{
+    @apply w-8/12 h-auto;
+    max-width: 360px;
+  }
+
 /* 干员页面的默认背景，以及标题、目录的文本投影效果。 */
 
 ul.hidden-sm.hidden-xs.hidden-print.affix-top.nav.nav-list,
