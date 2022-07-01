@@ -415,7 +415,15 @@ body.page-首页 div.pollembed-wrap div.poll-wrap div.progress{
 }
 
 
+/* ContentSub内容 */
 
+.huiji-css-hook #contentSub {
+    color: #CCCCCC;
+}
+
+.huiji-css-hook .toc-sidebar li a {
+    color: #CCCCCC;
+}
 
 
 /* wikitable和mw-datatable 备份 */
@@ -1579,12 +1587,6 @@ vertical-align: 1.5em;
 	width:40px;height:auto;
 } 
 }
-
-
-
-
-
-
 
 
 
