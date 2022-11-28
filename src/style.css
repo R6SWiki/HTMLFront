@@ -16,12 +16,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 在tailwindCSS中补充没有涉及的属性量 */
+/* AA 在tailwindCSS中补充没有涉及的属性量 */
 @layer utilities{
     .scale-115{
         transform: scale(1.15);
     }
 }
+/* AA-end */
 
 
 
