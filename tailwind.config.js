@@ -41,6 +41,9 @@ module.exports = {
       y6s3color:"#F0A53B",
       y6s4color:"#587624",
       y7s1color:"#ffb52b",
+      y7s2color:"#6bd4b7",
+      y7s3color:"#dac925",
+      y7s4color:"#cf3314",
       t_bgcolor: "#1E1F23",
       cellbg: "#0E0F11",
       cellline:"#1D1F23",
@@ -57,5 +60,8 @@ module.exports = {
     }
     },
   },
-  plugins: []
+  plugins: [],
+  corePlugins:{
+    preflight:false,
+  },
 }

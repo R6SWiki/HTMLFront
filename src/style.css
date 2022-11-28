@@ -1,58 +1,33 @@
-/* <%-- [PAGE_INFO]
-Comment=#Please do not remove this struct. It's record contains some important informations of edit. This struct will be removed automatically after you push edits.#
-PageTitle=#MediaWiki:Common.css#
-PageID=#608#
-RevisionID=#22972#
-ContentModel=#css#
-ContentFormat=#text/css#
-[END_PAGE_INFO] --%> */
+/*<%-- [PAGE_INFO]
+    comment = #Please do not remove this struct. It's record contains some important information of edit. This struct will be removed automatically after you push edits.#
+    pageTitle = #MediaWiki:Common.css#
+    pageID = #608#
+    revisionID = #28374#
+    contentModel = #css#
+    contentFormat = #text/css#
+[END_PAGE_INFO] --%>*/
 
 
 /*本站的部分CSS基于tailwindCSS库实现，请使用tailwindCSS工程文件来维护*/
 /*项目地址：https://github.com/R6SWiki/HTMLFront*/
 
 
-/* @tailwind base; */
-/* @tailwind components; */
+@tailwind base;
+@tailwind components;
 @tailwind utilities;
 
-
-/* @layer base{
-    a{
-        @apply text-primary;
-    }
-img,
-svg,
-video,
-canvas,
-audio,
-iframe,
-embed,
-object {
-display:inline-block;
-}
-img,
-video {
-max-width: inherit;
-height: inherit;
-}
-} */
-
+/* 在tailwindCSS中补充没有涉及的属性量 */
 @layer utilities{
     .scale-115{
         transform: scale(1.15);
     }
-    .scale-105{
-        transform: scale(1.05);
-    }
 }
+
 
 
 html{
     font-size: 10px;
 }
-
-
 
 /* 2022愚人节彩蛋 */
 div.formalentry-content.yurenjie span a.external.text:hover::after{
@@ -604,8 +579,17 @@ body #wiki-outer-body.huiji-css-hook {
 }
 */
 
+#mw-edittools-charinsert a {
+    background: #424242;
+    max-height: 200px;
+    margin: 0.2rem;
+    max-width: 100%;
+    width: auto;
+    padding: 4px;
+  }
 
-#ca-edit, #ca-huiji-ve-edit,span.edit-active a.mw-editsection-visualeditor{
+
+div.page-action-entry.page-action-ve-edit{
     display:none!important;
 }
 
@@ -1554,7 +1538,7 @@ span.operatorname-badge{
 	vertical-align: -5px;
     width: 24px;
     height: 24px;
-    background-image: url(//huiji-public.huijistatic.com/r6s/uploads/e/e1/Operator_badge_black_border_96px.png);
+    background-image: url(//huiji-public.huijistatic.com/r6s/uploads/0/06/Operator_badge_black_border_96px.webp);
     /* margin-left: auto; */
     /* margin-right: auto; */
     display: inline-block;
