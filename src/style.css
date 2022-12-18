@@ -603,7 +603,10 @@ div.page-action-entry.page-action-ve-edit{
 
 body.page-首页 #wiki-outer-body.huiji-css-hook,
 body.page-首页草稿 #wiki-outer-body.huiji-css-hook {
-    background: #090f15 url('https://huiji-public.huijistatic.com/r6s/uploads/e/e2/Y7S2-BG-2.png') no-repeat center 90px;
+  background-color: #090f15;
+  background-position:center 90px;
+  background-repeat:no-repeat;
+  background-image:url('https://huiji-public.huijistatic.com/r6s/uploads/9/90/Y7S4-BG.png')
 }
 
 body.page-首页 section#bodyContent,
@@ -631,8 +634,11 @@ header.page-header#firstHeading{
 }
 
 div.huiji-css-hook#wiki-outer-body{
-    background: #090f15 url('https://huiji-public.huijistatic.com/r6s/uploads/e/e2/Y7S2-BG-2.png') no-repeat center 90px;
-}
+    background-color: #090f15;
+    background-position:center 90px;
+    background-repeat:no-repeat;
+    background-image:url('https://huiji-public.huijistatic.com/r6s/uploads/9/90/Y7S4-BG.png')
+  }
 
 
 
