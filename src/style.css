@@ -601,6 +601,17 @@ div.page-action-entry.page-action-ve-edit{
     padding: 24px;
 }
 
+<<<<<<< HEAD
+=======
+body.page-首页 #wiki-outer-body.huiji-css-hook,
+body.page-首页草稿 #wiki-outer-body.huiji-css-hook {
+  background-color: #090f15;
+  background-position:center 90px;
+  background-repeat:no-repeat;
+  background-image:url('https://huiji-public.huijistatic.com/r6s/uploads/9/90/Y7S4-BG.png')
+}
+
+>>>>>>> yin7.4
 body.page-首页 section#bodyContent,
 body.page-首页草稿 section#bodyContent {
     @apply !p-0 md:!p-6
@@ -625,6 +636,16 @@ header.page-header#firstHeading{
     text-shadow: 0em 0em 1em black;
 }
 
+<<<<<<< HEAD
+=======
+div.huiji-css-hook#wiki-outer-body{
+    background-color: #090f15;
+    background-position:center 90px;
+    background-repeat:no-repeat;
+    background-image:url('https://huiji-public.huijistatic.com/r6s/uploads/9/90/Y7S4-BG.png')
+  }
+
+>>>>>>> yin7.4
 
 
 /* 干员首页的默认背景，以及标题、目录的文本投影效果。 */
