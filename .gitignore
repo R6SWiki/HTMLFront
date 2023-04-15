@@ -6,7 +6,7 @@ src/pages
 dist/common.css
 node_modules/
 package-lock.json
-wikipages/
+pages/
 .vscode/R6swiki.code-snippets
 .prettierrc
 .vscode/lua.code-snippets
