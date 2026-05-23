@@ -17,7 +17,7 @@
 1. 以最基本的方法安装TailwindCSS（如果已安装跳过）：使用在vscode项目中打开终端输入按顺序输入以下命令并回车：
 	`npm install -D tailwindcss`
 2. 确保`tailwind.config.js`和`src/style.css`已经在工作区目录下。如果你git了整个项目，那么这些文件已经放在该放的地方了。
-3. 在终端输入`npx tailwindcss -i ./src/style.css -o ./dist/common.css --watch`并回车。
+3. 在终端输入`npx tailwindcss/cli -i ./src/style.css -o ./dist/common.css --watch`并回车。
 
 之后src下的`style.css`和一众`html`布局设计文件都在修改样式类的时候，`dist`下的`common.css`文件会自动更改，工作完成后，你可以使用`Wikitext3.4`插件上传`common.css`文件，这个`style.css`已经附带了页面信息标签头。
 ## 注意事项
